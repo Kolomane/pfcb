@@ -1,0 +1,532 @@
+{
+    "success": true,
+    "build": {
+        "name": "Edric Emberflame",
+        "class": "Wizard",
+        "dualClass": null,
+        "level": 2,
+        "ancestry": "Human",
+        "heritage": "Skilled Heritage",
+        "background": "Bibliophile",
+        "alignment": "N",
+        "gender": "Male",
+        "age": "20",
+        "deity": "Not set",
+        "size": 2,
+        "sizeName": "Medium",
+        "keyability": "int",
+        "languages": [
+            "Common",
+            "Draconic",
+            "Dwarven",
+            "Elven",
+            "Halfling",
+            "Infernal"
+        ],
+        "rituals": [],
+        "resistances": [],
+        "attributes": {
+            "ancestryhp": 8,
+            "classhp": 6,
+            "bonushp": 0,
+            "bonushpPerLevel": 0,
+            "speed": 25,
+            "speedBonus": 0
+        },
+        "abilities": {
+            "str": 10,
+            "dex": 12,
+            "con": 12,
+            "int": 19,
+            "wis": 14,
+            "cha": 10,
+            "breakdown": {
+                "ancestryFree": [
+                    "Wis",
+                    "Int"
+                ],
+                "ancestryBoosts": [],
+                "ancestryFlaws": [],
+                "backgroundBoosts": [
+                    "Int",
+                    "Int"
+                ],
+                "classBoosts": [
+                    "Int"
+                ],
+                "mapLevelledBoosts": {
+                    "1": [
+                        "Wis",
+                        "Int",
+                        "Con",
+                        "Dex"
+                    ]
+                }
+            }
+        },
+        "proficiencies": {
+            "classDC": 2,
+            "perception": 2,
+            "fortitude": 2,
+            "reflex": 2,
+            "will": 4,
+            "heavy": 0,
+            "medium": 0,
+            "light": 0,
+            "unarmored": 2,
+            "advanced": 0,
+            "martial": 0,
+            "simple": 0,
+            "unarmed": 2,
+            "castingArcane": 2,
+            "castingDivine": 0,
+            "castingOccult": 0,
+            "castingPrimal": 0,
+            "acrobatics": 2,
+            "arcana": 2,
+            "athletics": 2,
+            "crafting": 0,
+            "deception": 0,
+            "diplomacy": 0,
+            "intimidation": 0,
+            "medicine": 2,
+            "nature": 2,
+            "occultism": 2,
+            "performance": 0,
+            "religion": 2,
+            "society": 2,
+            "stealth": 0,
+            "survival": 2,
+            "thievery": 0
+        },
+        "mods": {},
+        "feats": [
+            [
+                "Arcane Sense",
+                null,
+                "Awarded Feat",
+                1
+            ],
+            [
+                "Reach Spell",
+                null,
+                "Wizard Feat",
+                1,
+                "Arcane Thesis",
+                "standardChoice",
+                null
+            ],
+            [
+                "Skilled Heritage",
+                null,
+                "Heritage",
+                1,
+                "Heritage Feat",
+                "standardChoice",
+                null
+            ],
+            [
+                "Dragon Spit",
+                null,
+                "Ancestry Feat",
+                1,
+                "Human Feat 1",
+                "standardChoice",
+                null
+            ],
+            [
+                "Recognize Spell",
+                null,
+                "Skill Feat",
+                2,
+                "Skill Feat 2",
+                "standardChoice",
+                null
+            ],
+            [
+                "Spellbook Prodigy",
+                null,
+                "Class Feat",
+                2,
+                "Wizard Feat 2",
+                "standardChoice",
+                null
+            ]
+        ],
+        "specials": [
+            "Arcane School: Illusion",
+            "Arcane Thesis: Metamagical Experimentation",
+            "Religion",
+            "Spellbook",
+            "Electric Arc",
+            "Drain Bonded Item",
+            "Arcane Bond",
+            "Skilled Heritage"
+        ],
+        "lores": [
+            [
+                "Library",
+                2
+            ]
+        ],
+        "equipmentContainers": {
+            "ce8616e7-a253-4e7e-a6c9-78f86936fd5e": {
+                "containerName": "Backpack",
+                "bagOfHolding": false,
+                "backpack": true
+            }
+        },
+        "equipment": [
+            [
+                "Spellbook (Blank)",
+                1,
+                "Invested"
+            ],
+            [
+                "Backpack",
+                1,
+                "Invested"
+            ],
+            [
+                "Bedroll",
+                1,
+                "ce8616e7-a253-4e7e-a6c9-78f86936fd5e",
+                "Invested"
+            ],
+            [
+                "Chalk",
+                10,
+                "ce8616e7-a253-4e7e-a6c9-78f86936fd5e",
+                "Invested"
+            ],
+            [
+                "Flint and Steel",
+                1,
+                "ce8616e7-a253-4e7e-a6c9-78f86936fd5e",
+                "Invested"
+            ],
+            [
+                "Rope",
+                1,
+                "ce8616e7-a253-4e7e-a6c9-78f86936fd5e",
+                "Invested"
+            ],
+            [
+                "Rations",
+                2,
+                "ce8616e7-a253-4e7e-a6c9-78f86936fd5e",
+                "Invested"
+            ],
+            [
+                "Torch",
+                6,
+                "ce8616e7-a253-4e7e-a6c9-78f86936fd5e",
+                "Invested"
+            ],
+            [
+                "Waterskin",
+                1,
+                "ce8616e7-a253-4e7e-a6c9-78f86936fd5e",
+                "Invested"
+            ],
+            [
+                "Soap",
+                1,
+                "ce8616e7-a253-4e7e-a6c9-78f86936fd5e",
+                "Invested"
+            ],
+            [
+                "Arrows",
+                19,
+                "Invested"
+            ],
+            [
+                "Air Bladder",
+                1,
+                "Invested"
+            ],
+            [
+                "Dueling Cape",
+                1,
+                "Invested"
+            ],
+            [
+                "Earplugs",
+                1,
+                "Invested"
+            ],
+            [
+                "Oil",
+                2,
+                "Invested"
+            ],
+            [
+                "Ten-Foot Pole",
+                1,
+                "Invested"
+            ],
+            [
+                "Healer's Tools",
+                1,
+                "Invested"
+            ],
+            [
+                "Black Adder Venom",
+                1,
+                "Invested"
+            ]
+        ],
+        "specificProficiencies": {
+            "trained": [
+                "Staff",
+                "Heavy Crossbow"
+            ],
+            "expert": [],
+            "master": [],
+            "legendary": []
+        },
+        "weapons": [
+            {
+                "name": "Fist",
+                "qty": 1,
+                "prof": "unarmed",
+                "die": "d4",
+                "pot": 0,
+                "str": "",
+                "mat": null,
+                "display": "Fist",
+                "runes": [],
+                "damageType": "B",
+                "attack": 5,
+                "damageBonus": 0,
+                "extraDamage": [],
+                "increasedDice": false
+            },
+            {
+                "name": "Staff",
+                "qty": 1,
+                "prof": "simple",
+                "die": "d8",
+                "pot": 0,
+                "str": "",
+                "mat": null,
+                "display": "Staff (2h)",
+                "runes": [],
+                "damageType": "B",
+                "attack": 4,
+                "damageBonus": 0,
+                "extraDamage": [],
+                "increasedDice": false
+            },
+            {
+                "name": "Heavy Crossbow",
+                "qty": 1,
+                "prof": "simple",
+                "die": "d10",
+                "pot": 0,
+                "str": "",
+                "mat": null,
+                "display": "Heavy Crossbow",
+                "runes": [],
+                "damageType": "P",
+                "attack": 5,
+                "damageBonus": 0,
+                "extraDamage": [],
+                "increasedDice": false
+            }
+        ],
+        "money": {
+            "cp": 9,
+            "sp": 6,
+            "gp": 1,
+            "pp": 0
+        },
+        "armor": [
+            {
+                "name": "Scroll Robes",
+                "qty": 1,
+                "prof": "unarmored",
+                "pot": 0,
+                "res": "",
+                "mat": null,
+                "display": "Scroll Robes",
+                "worn": true,
+                "runes": []
+            },
+            {
+                "name": "Hide Shield",
+                "qty": 1,
+                "prof": "shield",
+                "pot": 0,
+                "res": "",
+                "mat": null,
+                "display": "",
+                "worn": true,
+                "runes": []
+            }
+        ],
+        "spellCasters": [
+            {
+                "name": "Caster Arcane Sense",
+                "magicTradition": "arcane",
+                "spellcastingType": "prepared",
+                "ability": "cha",
+                "proficiency": 2,
+                "focusPoints": 0,
+                "innate": true,
+                "perDay": [
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "spells": [
+                    {
+                        "spellLevel": 0,
+                        "list": [
+                            "Detect Magic"
+                        ]
+                    }
+                ],
+                "prepared": [],
+                "blendedSpells": []
+            },
+            {
+                "name": "Caster Dragon Spit",
+                "magicTradition": "arcane",
+                "spellcastingType": "prepared",
+                "ability": "cha",
+                "proficiency": 2,
+                "focusPoints": 0,
+                "innate": true,
+                "perDay": [
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "spells": [
+                    {
+                        "spellLevel": 0,
+                        "list": [
+                            "Electric Arc"
+                        ]
+                    }
+                ],
+                "prepared": [],
+                "blendedSpells": []
+            },
+            {
+                "name": "Wizard",
+                "magicTradition": "arcane",
+                "spellcastingType": "prepared",
+                "ability": "int",
+                "proficiency": 2,
+                "focusPoints": 0,
+                "innate": false,
+                "perDay": [
+                    6,
+                    4,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "spells": [
+                    {
+                        "spellLevel": 0,
+                        "list": [
+                            "Illuminate",
+                            "Needle Darts",
+                            "Timber",
+                            "Daze",
+                            "Message",
+                            "Light",
+                            "Acid Splash",
+                            "Warp Step",
+                            "Spout",
+                            "Mage Hand"
+                        ]
+                    },
+                    {
+                        "spellLevel": 1,
+                        "list": [
+                            "Briny Bolt",
+                            "Fear",
+                            "Invisible Item",
+                            "Magic Missile",
+                            "Mage Armor",
+                            "Gust of Wind"
+                        ]
+                    }
+                ],
+                "prepared": [
+                    {
+                        "spellLevel": 0,
+                        "list": [
+                            "Illuminate",
+                            "Light",
+                            "Needle Darts",
+                            "Daze",
+                            "Timber",
+                            "Message"
+                        ]
+                    },
+                    {
+                        "spellLevel": 1,
+                        "list": [
+                            "Briny Bolt",
+                            "Magic Missile",
+                            "Mage Armor",
+                            "Invisible Item"
+                        ]
+                    }
+                ],
+                "blendedSpells": []
+            }
+        ],
+        "focusPoints": 1,
+        "focus": {
+            "arcane": {
+                "int": {
+                    "abilityBonus": 4,
+                    "proficiency": 2,
+                    "itemBonus": 0,
+                    "focusCantrips": [],
+                    "focusSpells": [
+                        "Warped Terrain"
+                    ]
+                }
+            }
+        },
+        "formula": [],
+        "acTotal": {
+            "acProfBonus": 4,
+            "acAbilityBonus": 1,
+            "acItemBonus": 0,
+            "acTotal": 15,
+            "shieldBonus": "2"
+        },
+        "pets": [],
+        "familiars": []
+    }
+}
