@@ -127,7 +127,13 @@
                             <li id="saves" class="list-group-item">
                                 <div class="row">
                                     <div class="col">
-                                        <h6 class="fw-bold">Saves</h6>
+                                        <div class="hstack">
+                                            <h6 class="fw-bold">Saves</h6>
+                                            <div class="form-check form-switch ms-2">
+                                                <input class="form-check-input" type="checkbox" role="switch"
+                                                    id="saves-collapse-toggle">
+                                            </div>
+                                        </div>
                                         <div class="row row-cols-2">
 
                                             <div class="col-md-auto mb-2">
@@ -267,7 +273,13 @@
                                 </div>
                             </li>
                             <li id="abilities" class="list-group-item">
-                                <h6 class="fw-bold">Abilities & Proficiencies</h6>
+                                <div class="hstack">
+                                    <h6 class="fw-bold">Abilities</h6>
+                                    <div class="form-check form-switch ms-2">
+                                        <input class="form-check-input" type="checkbox" role="switch"
+                                            id="abilities-collapse-toggle">
+                                    </div>
+                                </div>
                                 <div class="row row-cols-2">
 
                                     <div class="col-md-auto mb-2">
@@ -617,7 +629,15 @@
                                 </div>
                             </li>
                             <li id="skills" class="list-group-item">
-                                <h6 class="fw-bold">Skills</h6>
+                                <div class="hstack">
+                                    <h6 class="fw-bold">Skills</h6>
+                                    <div class="form-check form-switch ms-2">
+                                        <input class="form-check-input" type="checkbox" role="switch"
+                                            id="skills-collapse-toggle">
+                                    </div>
+                                </div>
+
+
                                 <div class="row row-cols-2">
 
                                     <div class="col-md-auto mb-2">
@@ -647,16 +667,25 @@
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td><small id="acrobatics-ability-title">Dexterity</small></td>
-                                                                    <td class="text-center"><code id="acrobatics-ability-value">+1</code></td>
+                                                                    <td><small
+                                                                            id="acrobatics-ability-title">Dexterity</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="acrobatics-ability-value">+1</code></td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td><small id="acrobatics-proficiency-title">Proficiency</small></td>
-                                                                    <td class="text-center"><code id="acrobatics-proficiency-value">+4</code></td>
+                                                                    <td><small
+                                                                            id="acrobatics-proficiency-title">Proficiency</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="acrobatics-proficiency-value">+4</code>
+                                                                    </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td><small id="acrobatics-item-title">Item</small></td>
-                                                                    <td class="text-center"><code id="acrobatics-item-value">0</code></td>
+                                                                    <td><small id="acrobatics-item-title">Item</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="acrobatics-item-value">0</code></td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -724,16 +753,23 @@
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td><small id="arcana-ability-title">Dexterity</small></td>
-                                                                    <td class="text-center"><code id="arcana-ability-value">+1</code></td>
+                                                                    <td><small
+                                                                            id="arcana-ability-title">Dexterity</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="arcana-ability-value">+1</code></td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td><small id="arcana-proficiency-title">Proficiency</small></td>
-                                                                    <td class="text-center"><code id="arcana-proficiency-value">+4</code></td>
+                                                                    <td><small
+                                                                            id="arcana-proficiency-title">Proficiency</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="arcana-proficiency-value">+4</code></td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td><small id="arcana-item-title">Item</small></td>
-                                                                    <td class="text-center"><code id="arcana-item-value">0</code></td>
+                                                                    <td class="text-center"><code
+                                                                            id="arcana-item-value">0</code></td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -801,16 +837,25 @@
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td><small id="athletics-ability-title">Dexterity</small></td>
-                                                                    <td class="text-center"><code id="athletics-ability-value">+1</code></td>
+                                                                    <td><small
+                                                                            id="athletics-ability-title">Dexterity</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="athletics-ability-value">+1</code></td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td><small id="athletics-proficiency-title">Proficiency</small></td>
-                                                                    <td class="text-center"><code id="athletics-proficiency-value">+4</code></td>
+                                                                    <td><small
+                                                                            id="athletics-proficiency-title">Proficiency</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="athletics-proficiency-value">+4</code>
+                                                                    </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td><small id="athletics-item-title">Item</small></td>
-                                                                    <td class="text-center"><code id="athletics-item-value">0</code></td>
+                                                                    <td><small id="athletics-item-title">Item</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="athletics-item-value">0</code></td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -878,16 +923,25 @@
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td><small id="crafting-ability-title">Dexterity</small></td>
-                                                                    <td class="text-center"><code id="crafting-ability-value">+1</code></td>
+                                                                    <td><small
+                                                                            id="crafting-ability-title">Dexterity</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="crafting-ability-value">+1</code></td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td><small id="crafting-proficiency-title">Proficiency</small></td>
-                                                                    <td class="text-center"><code id="crafting-proficiency-value">+4</code></td>
+                                                                    <td><small
+                                                                            id="crafting-proficiency-title">Proficiency</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="crafting-proficiency-value">+4</code>
+                                                                    </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td><small id="crafting-item-title">Item</small></td>
-                                                                    <td class="text-center"><code id="crafting-item-value">0</code></td>
+                                                                    <td><small id="crafting-item-title">Item</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="crafting-item-value">0</code></td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -955,16 +1009,25 @@
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td><small id="deception-ability-title">Dexterity</small></td>
-                                                                    <td class="text-center"><code id="deception-ability-value">+1</code></td>
+                                                                    <td><small
+                                                                            id="deception-ability-title">Dexterity</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="deception-ability-value">+1</code></td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td><small id="deception-proficiency-title">Proficiency</small></td>
-                                                                    <td class="text-center"><code id="deception-proficiency-value">+4</code></td>
+                                                                    <td><small
+                                                                            id="deception-proficiency-title">Proficiency</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="deception-proficiency-value">+4</code>
+                                                                    </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td><small id="deception-item-title">Item</small></td>
-                                                                    <td class="text-center"><code id="deception-item-value">0</code></td>
+                                                                    <td><small id="deception-item-title">Item</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="deception-item-value">0</code></td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -1032,16 +1095,25 @@
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td><small id="diplomacy-ability-title">Dexterity</small></td>
-                                                                    <td class="text-center"><code id="diplomacy-ability-value">+1</code></td>
+                                                                    <td><small
+                                                                            id="diplomacy-ability-title">Dexterity</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="diplomacy-ability-value">+1</code></td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td><small id="diplomacy-proficiency-title">Proficiency</small></td>
-                                                                    <td class="text-center"><code id="diplomacy-proficiency-value">+4</code></td>
+                                                                    <td><small
+                                                                            id="diplomacy-proficiency-title">Proficiency</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="diplomacy-proficiency-value">+4</code>
+                                                                    </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td><small id="diplomacy-item-title">Item</small></td>
-                                                                    <td class="text-center"><code id="diplomacy-item-value">0</code></td>
+                                                                    <td><small id="diplomacy-item-title">Item</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="diplomacy-item-value">0</code></td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -1109,16 +1181,26 @@
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td><small id="intimidation-ability-title">Dexterity</small></td>
-                                                                    <td class="text-center"><code id="intimidation-ability-value">+1</code></td>
+                                                                    <td><small
+                                                                            id="intimidation-ability-title">Dexterity</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="intimidation-ability-value">+1</code>
+                                                                    </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td><small id="intimidation-proficiency-title">Proficiency</small></td>
-                                                                    <td class="text-center"><code id="intimidation-proficiency-value">+4</code></td>
+                                                                    <td><small
+                                                                            id="intimidation-proficiency-title">Proficiency</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="intimidation-proficiency-value">+4</code>
+                                                                    </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td><small id="intimidation-item-title">Item</small></td>
-                                                                    <td class="text-center"><code id="intimidation-item-value">0</code></td>
+                                                                    <td><small id="intimidation-item-title">Item</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="intimidation-item-value">0</code></td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -1133,7 +1215,8 @@
                                                                     </th>
                                                                     <th id="master-title-intimidation" scope="col">Ma.
                                                                     </th>
-                                                                    <th id="legendary-title-intimidation" scope="col">Le.
+                                                                    <th id="legendary-title-intimidation" scope="col">
+                                                                        Le.
                                                                     </th>
                                                                 </tr>
                                                             </thead>
@@ -1186,16 +1269,26 @@
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td><small id="lore-library-ability-title">Dexterity</small></td>
-                                                                    <td class="text-center"><code id="lore-library-ability-value">+1</code></td>
+                                                                    <td><small
+                                                                            id="lore-library-ability-title">Dexterity</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="lore-library-ability-value">+1</code>
+                                                                    </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td><small id="lore-library-proficiency-title">Proficiency</small></td>
-                                                                    <td class="text-center"><code id="lore-library-proficiency-value">+4</code></td>
+                                                                    <td><small
+                                                                            id="lore-library-proficiency-title">Proficiency</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="lore-library-proficiency-value">+4</code>
+                                                                    </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td><small id="lore-library-item-title">Item</small></td>
-                                                                    <td class="text-center"><code id="lore-library-item-value">0</code></td>
+                                                                    <td><small id="lore-library-item-title">Item</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="lore-library-item-value">0</code></td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -1210,7 +1303,8 @@
                                                                     </th>
                                                                     <th id="master-title-lore-library" scope="col">Ma.
                                                                     </th>
-                                                                    <th id="legendary-title-lore-library" scope="col">Le.
+                                                                    <th id="legendary-title-lore-library" scope="col">
+                                                                        Le.
                                                                     </th>
                                                                 </tr>
                                                             </thead>
@@ -1263,16 +1357,25 @@
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td><small id="medicine-ability-title">Dexterity</small></td>
-                                                                    <td class="text-center"><code id="medicine-ability-value">+1</code></td>
+                                                                    <td><small
+                                                                            id="medicine-ability-title">Dexterity</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="medicine-ability-value">+1</code></td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td><small id="medicine-proficiency-title">Proficiency</small></td>
-                                                                    <td class="text-center"><code id="medicine-proficiency-value">+4</code></td>
+                                                                    <td><small
+                                                                            id="medicine-proficiency-title">Proficiency</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="medicine-proficiency-value">+4</code>
+                                                                    </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td><small id="medicine-item-title">Item</small></td>
-                                                                    <td class="text-center"><code id="medicine-item-value">0</code></td>
+                                                                    <td><small id="medicine-item-title">Item</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="medicine-item-value">0</code></td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -1340,16 +1443,23 @@
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td><small id="nature-ability-title">Dexterity</small></td>
-                                                                    <td class="text-center"><code id="nature-ability-value">+1</code></td>
+                                                                    <td><small
+                                                                            id="nature-ability-title">Dexterity</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="nature-ability-value">+1</code></td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td><small id="nature-proficiency-title">Proficiency</small></td>
-                                                                    <td class="text-center"><code id="nature-proficiency-value">+4</code></td>
+                                                                    <td><small
+                                                                            id="nature-proficiency-title">Proficiency</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="nature-proficiency-value">+4</code></td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td><small id="nature-item-title">Item</small></td>
-                                                                    <td class="text-center"><code id="nature-item-value">0</code></td>
+                                                                    <td class="text-center"><code
+                                                                            id="nature-item-value">0</code></td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -1417,16 +1527,25 @@
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td><small id="occultism-ability-title">Dexterity</small></td>
-                                                                    <td class="text-center"><code id="occultism-ability-value">+1</code></td>
+                                                                    <td><small
+                                                                            id="occultism-ability-title">Dexterity</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="occultism-ability-value">+1</code></td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td><small id="occultism-proficiency-title">Proficiency</small></td>
-                                                                    <td class="text-center"><code id="occultism-proficiency-value">+4</code></td>
+                                                                    <td><small
+                                                                            id="occultism-proficiency-title">Proficiency</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="occultism-proficiency-value">+4</code>
+                                                                    </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td><small id="occultism-item-title">Item</small></td>
-                                                                    <td class="text-center"><code id="occultism-item-value">0</code></td>
+                                                                    <td><small id="occultism-item-title">Item</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="occultism-item-value">0</code></td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -1494,16 +1613,26 @@
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td><small id="performance-ability-title">Dexterity</small></td>
-                                                                    <td class="text-center"><code id="performance-ability-value">+1</code></td>
+                                                                    <td><small
+                                                                            id="performance-ability-title">Dexterity</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="performance-ability-value">+1</code>
+                                                                    </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td><small id="performance-proficiency-title">Proficiency</small></td>
-                                                                    <td class="text-center"><code id="performance-proficiency-value">+4</code></td>
+                                                                    <td><small
+                                                                            id="performance-proficiency-title">Proficiency</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="performance-proficiency-value">+4</code>
+                                                                    </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td><small id="performance-item-title">Item</small></td>
-                                                                    <td class="text-center"><code id="performance-item-value">0</code></td>
+                                                                    <td><small id="performance-item-title">Item</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="performance-item-value">0</code></td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -1571,16 +1700,25 @@
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td><small id="religion-ability-title">Dexterity</small></td>
-                                                                    <td class="text-center"><code id="religion-ability-value">+1</code></td>
+                                                                    <td><small
+                                                                            id="religion-ability-title">Dexterity</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="religion-ability-value">+1</code></td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td><small id="religion-proficiency-title">Proficiency</small></td>
-                                                                    <td class="text-center"><code id="religion-proficiency-value">+4</code></td>
+                                                                    <td><small
+                                                                            id="religion-proficiency-title">Proficiency</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="religion-proficiency-value">+4</code>
+                                                                    </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td><small id="religion-item-title">Item</small></td>
-                                                                    <td class="text-center"><code id="religion-item-value">0</code></td>
+                                                                    <td><small id="religion-item-title">Item</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="religion-item-value">0</code></td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -1648,16 +1786,24 @@
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td><small id="society-ability-title">Dexterity</small></td>
-                                                                    <td class="text-center"><code id="society-ability-value">+1</code></td>
+                                                                    <td><small
+                                                                            id="society-ability-title">Dexterity</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="society-ability-value">+1</code></td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td><small id="society-proficiency-title">Proficiency</small></td>
-                                                                    <td class="text-center"><code id="society-proficiency-value">+4</code></td>
+                                                                    <td><small
+                                                                            id="society-proficiency-title">Proficiency</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="society-proficiency-value">+4</code>
+                                                                    </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td><small id="society-item-title">Item</small></td>
-                                                                    <td class="text-center"><code id="society-item-value">0</code></td>
+                                                                    <td class="text-center"><code
+                                                                            id="society-item-value">0</code></td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -1725,16 +1871,24 @@
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td><small id="stealth-ability-title">Dexterity</small></td>
-                                                                    <td class="text-center"><code id="stealth-ability-value">+1</code></td>
+                                                                    <td><small
+                                                                            id="stealth-ability-title">Dexterity</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="stealth-ability-value">+1</code></td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td><small id="stealth-proficiency-title">Proficiency</small></td>
-                                                                    <td class="text-center"><code id="stealth-proficiency-value">+4</code></td>
+                                                                    <td><small
+                                                                            id="stealth-proficiency-title">Proficiency</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="stealth-proficiency-value">+4</code>
+                                                                    </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td><small id="stealth-item-title">Item</small></td>
-                                                                    <td class="text-center"><code id="stealth-item-value">0</code></td>
+                                                                    <td class="text-center"><code
+                                                                            id="stealth-item-value">0</code></td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -1802,16 +1956,25 @@
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td><small id="survival-ability-title">Dexterity</small></td>
-                                                                    <td class="text-center"><code id="survival-ability-value">+1</code></td>
+                                                                    <td><small
+                                                                            id="survival-ability-title">Dexterity</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="survival-ability-value">+1</code></td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td><small id="survival-proficiency-title">Proficiency</small></td>
-                                                                    <td class="text-center"><code id="survival-proficiency-value">+4</code></td>
+                                                                    <td><small
+                                                                            id="survival-proficiency-title">Proficiency</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="survival-proficiency-value">+4</code>
+                                                                    </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td><small id="survival-item-title">Item</small></td>
-                                                                    <td class="text-center"><code id="survival-item-value">0</code></td>
+                                                                    <td><small id="survival-item-title">Item</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="survival-item-value">0</code></td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -1879,16 +2042,25 @@
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td><small id="thievery-ability-title">Dexterity</small></td>
-                                                                    <td class="text-center"><code id="thievery-ability-value">+1</code></td>
+                                                                    <td><small
+                                                                            id="thievery-ability-title">Dexterity</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="thievery-ability-value">+1</code></td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td><small id="thievery-proficiency-title">Proficiency</small></td>
-                                                                    <td class="text-center"><code id="thievery-proficiency-value">+4</code></td>
+                                                                    <td><small
+                                                                            id="thievery-proficiency-title">Proficiency</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="thievery-proficiency-value">+4</code>
+                                                                    </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td><small id="thievery-item-title">Item</small></td>
-                                                                    <td class="text-center"><code id="thievery-item-value">0</code></td>
+                                                                    <td><small id="thievery-item-title">Item</small>
+                                                                    </td>
+                                                                    <td class="text-center"><code
+                                                                            id="thievery-item-value">0</code></td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -2403,6 +2575,13 @@
                 // $('#wisdom-card').css({ 'border-color': '#D5EEF3' })
                 // $('#charisma-card').css({ 'border-color': '#FFFCE6' })
             }
+        })
+
+        $('#skills-collapse-toggle').on('click', function () {
+            let theValue = $('#skills-collapse-toggle').is(':checked')
+            console.log(`theValue = ${theValue}`)
+            const collapseElementList = document.querySelectorAll('#skills .collapse')
+            const collapseList = [...collapseElementList].map(collapseEl => new bootstrap.Collapse(collapseEl))
         })
     </script>
 </body>
