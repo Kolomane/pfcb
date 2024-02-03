@@ -91,7 +91,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#build">Build</a>
                     </li>
-                    
+
                 </ul>
                 <div class="d-flex" role="search">
                     <input class="form-control form-control-sm" type="search" placeholder="Search" aria-label="Search">
@@ -127,34 +127,115 @@
                             <li id="saves" class="list-group-item">
                                 <h6 class="fw-bold">Saves</h6>
                                 <div class="hstack col-12 text-center">
-                                    <div class="col-2">
-                                        <h6 class="fw-bold">Fortitude <h4><code>+5</code></h4></h6>
-                                        <table class="table table-sm table-hover">
+                                    <div>
+                                        <table id="fortitude-table" class="table table-sm table-hover">
                                             <thead>
-                                              <tr>
-                                                <th scope="col">Tr.</th>
-                                                <th scope="col">Ex.</th>
-                                                <th scope="col">Ma.</th>
-                                                <th scope="col">Le.</th>
-                                              </tr>
+                                                <tr>
+                                                    <th scope="col">
+                                                        <h6 id="fortitude-text-title" class="fw-bold">Fortitude</h6>
+                                                    </th>
+                                                </tr>
                                             </thead>
                                             <tbody>
-                                              <tr>
-                                                <td><i class="bi bi-check-square-fill"></i></td>
-                                                <td><i class="bi bi-square"></i></td>
-                                                <td><i class="bi bi-square"></i></td>
-                                                <td><i class="bi bi-square"></i></td>
-                                              </tr>
+                                                <tr>
+                                                    <td scope="col">
+                                                        <h5 id="fortitude-text-value" class="fw-bold">+5</h5>
+                                                    </td>
+                                                </tr>
                                             </tbody>
-                                          </table>
+                                        </table>
+                                        <table class="table table-sm table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th id="trained-title-fortitude" scope="col">Tr.</th>
+                                                    <th id="expert-title-fortitude" scope="col">Ex.</th>
+                                                    <th id="master-title-fortitude" scope="col">Ma.</th>
+                                                    <th id="legendary-title-fortitude" scope="col">Le.</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td id="trained-value-fortitude"><i class="bi bi-check-square-fill"></i></td>
+                                                    <td id="expert-value-fortitude"><i class="bi bi-square"></i></td>
+                                                    <td id="master-value-fortitude"><i class="bi bi-square"></i></td>
+                                                    <td id="legendary-value-fortitude"><i class="bi bi-square"></i></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                     <div class="vr ms-2 me-2"></div>
                                     <div>
-                                        <h6>Reflex</h6>
+                                        <table id="reflex-table" class="table table-sm table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">
+                                                        <h6 id="reflex-text-title" class="fw-bold">Reflex</h6>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td scope="col">
+                                                        <h5 id="reflex-text-value" class="fw-bold">+5</h5>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="table table-sm table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th id="trained-title-reflex" scope="col">Tr.</th>
+                                                    <th id="expert-title-reflex" scope="col">Ex.</th>
+                                                    <th id="master-title-reflex" scope="col">Ma.</th>
+                                                    <th id="legendary-title-reflex" scope="col">Le.</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td id="trained-value-reflex"><i class="bi bi-square"></i></td>
+                                                    <td id="expert-value-reflex"><i class="bi bi-square"></i></td>
+                                                    <td id="master-value-reflex"><i class="bi bi-check-square-fill"></i></td>
+                                                    <td id="legendary-value-reflex"><i class="bi bi-square"></i></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                     <div class="vr ms-2 me-2"></div>
                                     <div>
-                                        <h6>Will</h6>
+                                        <table id="will-table" class="table table-sm table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">
+                                                        <h6 id="will-text-title" class="fw-bold">Will</h6>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td scope="col">
+                                                        <h5 id="will-text-value" class="fw-bold">+5</h5>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="table table-sm table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th id="trained-title-will" scope="col">Tr.</th>
+                                                    <th id="expert-title-will" scope="col">Ex.</th>
+                                                    <th id="master-title-will" scope="col">Ma.</th>
+                                                    <th id="legendary-title-will" scope="col">Le.</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td id="trained-value-will"><i class="bi bi-square"></i></td>
+                                                    <td id="expert-value-will"><i class="bi bi-check-square-fill"></i></td>
+                                                    <td id="master-value-will"><i class="bi bi-square"></i></td>
+                                                    <td id="legendary-value-will"><i class="bi bi-square"></i></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </li>
@@ -434,8 +515,55 @@
         </div>
         <div class="offcanvas-body">
             <ul class="list-group-flush">
+                <li class="list-group-item d-grid mb-4">
+                    <h6 class="fw-bold">Change Color Scheme</h6>
+                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" class="btn-check" name="btnradio" id="color-scheme-0" autocomplete="off" checked>
+                        <label class="btn btn-outline-secondary" for="color-scheme-0">
+                            <span><i class="bi bi-square-fill text-light"></i></span>
+                            <span><i class="bi bi-square text-light"></i></span>
+                            <span><i class="bi bi-square-fill text-dark"></i></span>
+                            <span><i class="bi bi-square text-dark"></i></span>
+                        </label>
+                        <input type="radio" class="btn-check" name="btnradio" id="color-scheme-1" autocomplete="off">
+                        <label class="btn btn-outline-secondary" for="color-scheme-1">
+                            <span style="color:#FDB6C2;"><i class="bi bi-square-fill"></i></span>
+                            <span style="color:#FFFCE6;"><i class="bi bi-square-fill"></i></span>
+                            <span style="color:#C2F0F0;"><i class="bi bi-square-fill"></i></span>
+                            <span style="color:#D3E4FC;"><i class="bi bi-square-fill"></i></span>
+                        </label>
+                        <input type="radio" class="btn-check" name="btnradio" id="color-scheme-2" autocomplete="off">
+                        <label class="btn btn-outline-secondary" for="color-scheme-2">
+                            <span style="color:#FFD8D8;"><i class="bi bi-square-fill"></i></span>
+                            <span style="color:#FFEFD5;"><i class="bi bi-square-fill"></i></span>
+                            <span style="color:#E6FFE7;"><i class="bi bi-square-fill"></i></span>
+                            <span style="color:#D5EEF3;"><i class="bi bi-square-fill"></i></span>
+                        </label>
+                        <input type="radio" class="btn-check" name="btnradio" id="color-scheme-3" autocomplete="off">
+                        <label class="btn btn-outline-secondary" for="color-scheme-3">
+                            <span style="color:#87CEEB;"><i class="bi bi-square-fill"></i></span>
+                            <span style="color:#008080;"><i class="bi bi-square-fill"></i></span>
+                            <span style="color:#000080;"><i class="bi bi-square-fill"></i></span>
+                            <span style="color:#800080;"><i class="bi bi-square-fill"></i></span>
+                        </label>
+                        <input type="radio" class="btn-check" name="btnradio" id="color-scheme-4" autocomplete="off">
+                        <label class="btn btn-outline-secondary" for="color-scheme-4">
+                            <span style="color:#228B22;"><i class="bi bi-square-fill"></i></span>
+                            <span style="color:#FFA500;"><i class="bi bi-square-fill"></i></span>
+                            <span style="color:#800080;"><i class="bi bi-square-fill"></i></span>
+                            <span style="color:#FFD700;"><i class="bi bi-square-fill"></i></span>
+                        </label>
+                        <input type="radio" class="btn-check" name="btnradio" id="color-scheme-5" autocomplete="off">
+                        <label class="btn btn-outline-secondary" for="color-scheme-5">
+                            <span style="color:#CCEEFF;"><i class="bi bi-square-fill"></i></span>
+                            <span style="color:#87CEEB;"><i class="bi bi-square-fill"></i></span>
+                            <span style="color:#3366CC;"><i class="bi bi-square-fill"></i></span>
+                            <span style="color:#FFD700;"><i class="bi bi-square-fill"></i></span>
+                        </label>
+                    </div>
+                </li>
                 <li class="list-group-item d-grid">
-                    <h6 class="fw-bold">Toggle Color Scheme</h6>
+                    <h6 class="fw-bold">Toggle Light/Dark Mode</h6>
                     <button id="color-toggle-button" type="button" class="btn btn-light"><i id="color-toggle-icon"
                             class="bi bi-lightbulb-fill"></i></button>
                 </li>
@@ -461,6 +589,61 @@
         // })
     </script>
     <script>
+        $('#color-scheme-0').on('click', function () {
+            $('[id^=trained]').css({'border-color':'','color':''})
+            $('[id^=expert]').css({'border-color':'','color':''})
+            $('[id^=master]').css({'border-color':'','color':''})
+            $('[id^=legendary]').css({'border-color':'','color':''})
+            $('[id^=fortitude]').css({'border-color':'','color':''})
+            $('[id^=reflex]').css({'border-color':'','color':''})
+            $('[id^=will]').css({'border-color':'','color':''})
+        })
+        $('#color-scheme-1').on('click', function () {
+            $('[id^=trained]').css({'border-color':'#FDB6C2','color':'#FDB6C2'})
+            $('[id^=expert]').css({'border-color':'#FFFCE6','color':'#FFFCE6'})
+            $('[id^=master]').css({'border-color':'#C2F0F0','color':'#C2F0F0'})
+            $('[id^=legendary]').css({'border-color':'#D3E4FC','color':'#D3E4FC'})
+            $('[id^=fortitude]').css({'border-color':'#FDB6C2','color':'#FDB6C2'})
+            $('[id^=reflex]').css({'border-color':'#FFFCE6','color':'#FFFCE6'})
+            $('[id^=will]').css({'border-color':'#D3E4FC','color':'#D3E4FC'})
+        })
+        $('#color-scheme-2').on('click', function () {
+            $('[id^=trained]').css({'border-color':'#FFD8D8','color':'#FFD8D8'})
+            $('[id^=expert]').css({'border-color':'#FFEFD5','color':'#FFEFD5'})
+            $('[id^=master]').css({'border-color':'#E6FFE7','color':'#E6FFE7'})
+            $('[id^=legendary]').css({'border-color':'#D5EEF3','color':'#D5EEF3'})
+            $('[id^=fortitude]').css({'border-color':'#FFD8D8','color':'#FFD8D8'})
+            $('[id^=reflex]').css({'border-color':'#FFEFD5','color':'#FFEFD5'})
+            $('[id^=will]').css({'border-color':'#D5EEF3','color':'#D5EEF3'})
+        })
+        $('#color-scheme-3').on('click', function () {
+            $('[id^=trained]').css({'border-color':'#87CEEB','color':'#87CEEB'})
+            $('[id^=expert]').css({'border-color':'#008080','color':'#008080'})
+            $('[id^=master]').css({'border-color':'#000080','color':'#000080'})
+            $('[id^=legendary]').css({'border-color':'#800080','color':'#800080'})
+            $('[id^=fortitude]').css({'border-color':'#7CB2EB','color':'#7CB2EB'})
+            $('[id^=reflex]').css({'border-color':'#229999','color':'#229999'})
+            $('[id^=will]').css({'border-color':'#333366','color':'#333366'})
+        })
+        $('#color-scheme-4').on('click', function () {
+            $('[id^=trained]').css({'border-color':'#228B22','color':'#228B22'})
+            $('[id^=expert]').css({'border-color':'#FFA500','color':'#FFA500'})
+            $('[id^=master]').css({'border-color':'#800080','color':'#800080'})
+            $('[id^=legendary]').css({'border-color':'#FFD700','color':'#FFD700'})
+            $('[id^=fortitude]').css({'border-color':'#8B0000','color':'#8B0000'})
+            $('[id^=reflex]').css({'border-color':'#808000','color':'#808000'})
+            $('[id^=will]').css({'border-color':'#FFA500','color':'#FFA500'})
+        })
+        $('#color-scheme-5').on('click', function () {
+            $('[id^=trained]').css({'border-color':'#CCEEFF','color':'#CCEEFF'})
+            $('[id^=expert]').css({'border-color':'#87CEEB','color':'#87CEEB'})
+            $('[id^=master]').css({'border-color':'#3366CC','color':'#3366CC'})
+            $('[id^=legendary]').css({'border-color':'#FFD700','color':'#FFD700'})
+            $('[id^=fortitude]').css({'border-color':'#333366','color':'#333366'})
+            $('[id^=reflex]').css({'border-color':'#FFD700','color':'#FFD700'})
+            $('[id^=will]').css({'border-color':'#87CEEB','color':'#87CEEB'})
+        })
+
         $('#color-toggle-button').on('click', function () {
             let currentColor = $('html').attr('data-bs-theme')
             if (currentColor == "dark") {
