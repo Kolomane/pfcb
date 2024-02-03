@@ -31,7 +31,7 @@
                             </button>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#saves">Saves</a></li>
-                                <li><a class="dropdown-item" href="#proficiencies">Proficiencies</a></li>
+                                <li><a class="dropdown-item" href="#abilities">Abilities</a></li>
                                 <li><a class="dropdown-item" href="#skills">Skills</a></li>
                             </ul>
                         </div>
@@ -125,122 +125,536 @@
                         </div>
                         <ul class="list-group list-group-flush">
                             <li id="saves" class="list-group-item">
-                                <h6 class="fw-bold">Saves</h6>
-                                <div class="hstack col-12 text-center">
-                                    <div>
-                                        <table id="fortitude-table" class="table table-sm table-hover">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col">
-                                                        <h6 id="fortitude-text-title" class="fw-bold">Fortitude</h6>
-                                                    </th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td scope="col">
-                                                        <h5 id="fortitude-text-value" class="fw-bold">+5</h5>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <table class="table table-sm table-hover">
-                                            <thead>
-                                                <tr>
-                                                    <th id="trained-title-fortitude" scope="col">Tr.</th>
-                                                    <th id="expert-title-fortitude" scope="col">Ex.</th>
-                                                    <th id="master-title-fortitude" scope="col">Ma.</th>
-                                                    <th id="legendary-title-fortitude" scope="col">Le.</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td id="trained-value-fortitude"><i class="bi bi-check-square-fill"></i></td>
-                                                    <td id="expert-value-fortitude"><i class="bi bi-square"></i></td>
-                                                    <td id="master-value-fortitude"><i class="bi bi-square"></i></td>
-                                                    <td id="legendary-value-fortitude"><i class="bi bi-square"></i></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                <div class="row">
+                                    <div class="col">
+                                        <h6 class="fw-bold">Saves</h6>
+                                        <div class="hstack col-12 text-center">
+                                            <div>
+                                                <table id="fortitude-table" class="table table-sm table-hover">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">
+                                                                <h6 id="fortitude-text-title" class="fw-bold">Fortitude
+                                                                </h6>
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td scope="col">
+                                                                <h5 id="fortitude-text-value" class="fw-bold">+5</h5>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <table class="table table-sm table-hover">
+                                                    <thead>
+                                                        <tr>
+                                                            <th id="trained-title-fortitude" scope="col">Tr.</th>
+                                                            <th id="expert-title-fortitude" scope="col">Ex.</th>
+                                                            <th id="master-title-fortitude" scope="col">Ma.</th>
+                                                            <th id="legendary-title-fortitude" scope="col">Le.</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td id="trained-value-fortitude"><i
+                                                                    class="bi bi-check-square-fill"></i></td>
+                                                            <td id="expert-value-fortitude"><i class="bi bi-square"></i>
+                                                            </td>
+                                                            <td id="master-value-fortitude"><i class="bi bi-square"></i>
+                                                            </td>
+                                                            <td id="legendary-value-fortitude"><i
+                                                                    class="bi bi-square"></i></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="vr ms-2 me-2"></div>
+                                            <div>
+                                                <table id="reflex-table" class="table table-sm table-hover">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">
+                                                                <h6 id="reflex-text-title" class="fw-bold">Reflex</h6>
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td scope="col">
+                                                                <h5 id="reflex-text-value" class="fw-bold">+5</h5>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <table class="table table-sm table-hover">
+                                                    <thead>
+                                                        <tr>
+                                                            <th id="trained-title-reflex" scope="col">Tr.</th>
+                                                            <th id="expert-title-reflex" scope="col">Ex.</th>
+                                                            <th id="master-title-reflex" scope="col">Ma.</th>
+                                                            <th id="legendary-title-reflex" scope="col">Le.</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td id="trained-value-reflex"><i class="bi bi-square"></i>
+                                                            </td>
+                                                            <td id="expert-value-reflex"><i class="bi bi-square"></i>
+                                                            </td>
+                                                            <td id="master-value-reflex"><i
+                                                                    class="bi bi-check-square-fill"></i></td>
+                                                            <td id="legendary-value-reflex"><i class="bi bi-square"></i>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="vr ms-2 me-2"></div>
+                                            <div>
+                                                <table id="will-table" class="table table-sm table-hover">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">
+                                                                <h6 id="will-text-title" class="fw-bold">Will</h6>
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td scope="col">
+                                                                <h5 id="will-text-value" class="fw-bold">+5</h5>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <table class="table table-sm table-hover">
+                                                    <thead>
+                                                        <tr>
+                                                            <th id="trained-title-will" scope="col">Tr.</th>
+                                                            <th id="expert-title-will" scope="col">Ex.</th>
+                                                            <th id="master-title-will" scope="col">Ma.</th>
+                                                            <th id="legendary-title-will" scope="col">Le.</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td id="trained-value-will"><i class="bi bi-square"></i>
+                                                            </td>
+                                                            <td id="expert-value-will"><i
+                                                                    class="bi bi-check-square-fill"></i></td>
+                                                            <td id="master-value-will"><i class="bi bi-square"></i></td>
+                                                            <td id="legendary-value-will"><i class="bi bi-square"></i>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="vr ms-2 me-2"></div>
-                                    <div>
-                                        <table id="reflex-table" class="table table-sm table-hover">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col">
-                                                        <h6 id="reflex-text-title" class="fw-bold">Reflex</h6>
-                                                    </th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td scope="col">
-                                                        <h5 id="reflex-text-value" class="fw-bold">+5</h5>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <table class="table table-sm table-hover">
-                                            <thead>
-                                                <tr>
-                                                    <th id="trained-title-reflex" scope="col">Tr.</th>
-                                                    <th id="expert-title-reflex" scope="col">Ex.</th>
-                                                    <th id="master-title-reflex" scope="col">Ma.</th>
-                                                    <th id="legendary-title-reflex" scope="col">Le.</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td id="trained-value-reflex"><i class="bi bi-square"></i></td>
-                                                    <td id="expert-value-reflex"><i class="bi bi-square"></i></td>
-                                                    <td id="master-value-reflex"><i class="bi bi-check-square-fill"></i></td>
-                                                    <td id="legendary-value-reflex"><i class="bi bi-square"></i></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="vr ms-2 me-2"></div>
-                                    <div>
-                                        <table id="will-table" class="table table-sm table-hover">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col">
-                                                        <h6 id="will-text-title" class="fw-bold">Will</h6>
-                                                    </th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td scope="col">
-                                                        <h5 id="will-text-value" class="fw-bold">+5</h5>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <table class="table table-sm table-hover">
-                                            <thead>
-                                                <tr>
-                                                    <th id="trained-title-will" scope="col">Tr.</th>
-                                                    <th id="expert-title-will" scope="col">Ex.</th>
-                                                    <th id="master-title-will" scope="col">Ma.</th>
-                                                    <th id="legendary-title-will" scope="col">Le.</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td id="trained-value-will"><i class="bi bi-square"></i></td>
-                                                    <td id="expert-value-will"><i class="bi bi-check-square-fill"></i></td>
-                                                    <td id="master-value-will"><i class="bi bi-square"></i></td>
-                                                    <td id="legendary-value-will"><i class="bi bi-square"></i></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+
+                                    <div class="col">
+                                        <h6 class="fw-bold">Perception</h6>
+                                        <div class="hstack col-12 text-center">
+                                            <div>
+                                                <table id="perception-table" class="table table-sm table-hover">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">
+                                                                <h6 id="perception-text-title" class="fw-bold">
+                                                                    Perception</h6>
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td scope="col">
+                                                                <h5 id="perception-text-value" class="fw-bold">+5</h5>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <table class="table table-sm table-hover">
+                                                    <thead>
+                                                        <tr>
+                                                            <th id="trained-title-perception" scope="col">Tr.</th>
+                                                            <th id="expert-title-perception" scope="col">Ex.</th>
+                                                            <th id="master-title-perception" scope="col">Ma.</th>
+                                                            <th id="legendary-title-perception" scope="col">Le.</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td id="trained-value-perception"><i
+                                                                    class="bi bi-check-square-fill"></i></td>
+                                                            <td id="expert-value-perception"><i
+                                                                    class="bi bi-square"></i></td>
+                                                            <td id="master-value-perception"><i
+                                                                    class="bi bi-square"></i></td>
+                                                            <td id="legendary-value-perception"><i
+                                                                    class="bi bi-square"></i></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </li>
-                            <li id="proficiencies" class="list-group-item">Proficiencies</li>
-                            <li id="skills" class="list-group-item">Skills</li>
+                            <li id="abilities" class="list-group-item">
+                                <h6 class="fw-bold">Abilities & Proficiencies</h6>
+                                <div class="row row-cols-2">
+
+                                    <div class="col-md-auto mb-2">
+                                        <div id="strength-card" class="card">
+                                            <div id="strength-card-title" class="card-header text-center fw-bold">
+                                                Strength
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="hstack col-lg-auto text-center">
+                                                    <div>
+                                                        <table id="strength-modifier-table"
+                                                            class="table table-sm table-hover">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">
+                                                                        <h6 id="strength-modifier-text-title">
+                                                                            Modifier</h6>
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td scope="col">
+                                                                        <h5 id="strength-modifier-text-value"
+                                                                            class="fw-bold">
+                                                                            +0</h5>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="vr ms-2 me-2"></div>
+                                                    <div>
+                                                        <table id="strength-total-table"
+                                                            class="table table-sm table-hover">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">
+                                                                        <h6 id="strength-total-text-title">
+                                                                            Total</h6>
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td scope="col">
+                                                                        <h5 id="strength-total-text-value"
+                                                                            class="fw-bold">
+                                                                            10</h5>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-auto mb-2">
+                                        <div id="dexterity-card" class="card">
+                                            <div id="dexterity-card-title" class="card-header text-center fw-bold">
+                                                Dexterity
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="hstack col-lg-auto text-center">
+                                                    <div>
+                                                        <table id="dexterity-modifier-table"
+                                                            class="table table-sm table-hover">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">
+                                                                        <h6 id="dexterity-modifier-text-title">
+                                                                            Modifier</h6>
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td scope="col">
+                                                                        <h5 id="dexterity-modifier-text-value"
+                                                                            class="fw-bold">
+                                                                            +0</h5>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="vr ms-2 me-2"></div>
+                                                    <div>
+                                                        <table id="dexterity-total-table"
+                                                            class="table table-sm table-hover">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">
+                                                                        <h6 id="dexterity-total-text-title">
+                                                                            Total</h6>
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td scope="col">
+                                                                        <h5 id="dexterity-total-text-value"
+                                                                            class="fw-bold">
+                                                                            10</h5>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-auto mb-2">
+                                        <div id="constitution-card" class="card">
+                                            <div id="constitution-card-title" class="card-header text-center fw-bold">
+                                                Constitution
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="hstack col-lg-auto text-center">
+                                                    <div>
+                                                        <table id="constitution-modifier-table"
+                                                            class="table table-sm table-hover">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">
+                                                                        <h6 id="constitution-modifier-text-title">
+                                                                            Modifier</h6>
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td scope="col">
+                                                                        <h5 id="constitution-modifier-text-value"
+                                                                            class="fw-bold">
+                                                                            +0</h5>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="vr ms-2 me-2"></div>
+                                                    <div>
+                                                        <table id="constitution-total-table"
+                                                            class="table table-sm table-hover">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">
+                                                                        <h6 id="constitution-total-text-title">
+                                                                            Total</h6>
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td scope="col">
+                                                                        <h5 id="constitution-total-text-value"
+                                                                            class="fw-bold">
+                                                                            10</h5>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-auto mb-2">
+                                        <div id="intelligence-card" class="card">
+                                            <div id="intelligence-card-title" class="card-header text-center fw-bold">
+                                                Intelligence
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="hstack col-lg-auto text-center">
+                                                    <div>
+                                                        <table id="intelligence-modifier-table"
+                                                            class="table table-sm table-hover">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">
+                                                                        <h6 id="intelligence-modifier-text-title">
+                                                                            Modifier</h6>
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td scope="col">
+                                                                        <h5 id="intelligence-modifier-text-value"
+                                                                            class="fw-bold">
+                                                                            +0</h5>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="vr ms-2 me-2"></div>
+                                                    <div>
+                                                        <table id="intelligence-total-table"
+                                                            class="table table-sm table-hover">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">
+                                                                        <h6 id="intelligence-total-text-title">
+                                                                            Total</h6>
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td scope="col">
+                                                                        <h5 id="intelligence-total-text-value"
+                                                                            class="fw-bold">
+                                                                            10</h5>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-auto mb-2">
+                                        <div id="wisdom-card" class="card">
+                                            <div id="wisdom-card-title" class="card-header text-center fw-bold">
+                                                Wisdom
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="hstack col-lg-auto text-center">
+                                                    <div>
+                                                        <table id="wisdom-modifier-table"
+                                                            class="table table-sm table-hover">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">
+                                                                        <h6 id="wisdom-modifier-text-title">
+                                                                            Modifier</h6>
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td scope="col">
+                                                                        <h5 id="wisdom-modifier-text-value"
+                                                                            class="fw-bold">
+                                                                            +0</h5>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="vr ms-2 me-2"></div>
+                                                    <div>
+                                                        <table id="wisdom-total-table"
+                                                            class="table table-sm table-hover">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">
+                                                                        <h6 id="wisdom-total-text-title">
+                                                                            Total</h6>
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td scope="col">
+                                                                        <h5 id="wisdom-total-text-value"
+                                                                            class="fw-bold">
+                                                                            10</h5>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-auto mb-2">
+                                        <div id="charisma-card" class="card">
+                                            <div id="charisma-card-title" class="card-header text-center fw-bold">
+                                                Charisma
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="hstack col-lg-auto text-center">
+                                                    <div>
+                                                        <table id="charisma-modifier-table"
+                                                            class="table table-sm table-hover">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">
+                                                                        <h6 id="charisma-modifier-text-title">
+                                                                            Modifier</h6>
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td scope="col">
+                                                                        <h5 id="charisma-modifier-text-value"
+                                                                            class="fw-bold">
+                                                                            +0</h5>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="vr ms-2 me-2"></div>
+                                                    <div>
+                                                        <table id="charisma-total-table"
+                                                            class="table table-sm table-hover">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">
+                                                                        <h6 id="charisma-total-text-title">
+                                                                            Total</h6>
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td scope="col">
+                                                                        <h5 id="charisma-total-text-value"
+                                                                            class="fw-bold">
+                                                                            10</h5>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </li>
+                            <li id="skills" class="list-group-item">
+                                <h6 class="fw-bold">Skills</h6>
+                            </li>
                         </ul>
                     </div>
                     <!-- Rolls // END -->
@@ -518,7 +932,8 @@
                 <li class="list-group-item d-grid mb-4">
                     <h6 class="fw-bold">Change Color Scheme</h6>
                     <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                        <input type="radio" class="btn-check" name="btnradio" id="color-scheme-0" autocomplete="off" checked>
+                        <input type="radio" class="btn-check" name="btnradio" id="color-scheme-0" autocomplete="off"
+                            checked>
                         <label class="btn btn-outline-secondary" for="color-scheme-0">
                             <span><i class="bi bi-square-fill text-light"></i></span>
                             <span><i class="bi bi-square text-light"></i></span>
@@ -590,58 +1005,100 @@
     </script>
     <script>
         $('#color-scheme-0').on('click', function () {
-            $('[id^=trained]').css({'border-color':'','color':''})
-            $('[id^=expert]').css({'border-color':'','color':''})
-            $('[id^=master]').css({'border-color':'','color':''})
-            $('[id^=legendary]').css({'border-color':'','color':''})
-            $('[id^=fortitude]').css({'border-color':'','color':''})
-            $('[id^=reflex]').css({'border-color':'','color':''})
-            $('[id^=will]').css({'border-color':'','color':''})
+            $('[id^=trained]').css({ 'border-color': '', 'color': '' })
+            $('[id^=expert]').css({ 'border-color': '', 'color': '' })
+            $('[id^=master]').css({ 'border-color': '', 'color': '' })
+            $('[id^=legendary]').css({ 'border-color': '', 'color': '' })
+            $('[id^=fortitude]').css({ 'border-color': '', 'color': '' })
+            $('[id^=reflex]').css({ 'border-color': '', 'color': '' })
+            $('[id^=will]').css({ 'border-color': '', 'color': '' })
+
+            $('#strength-card').css({ 'border-color': '' })
+            $('#dexterity-card').css({ 'border-color': '' })
+            $('#constitution-card').css({ 'border-color': '' })
+            $('#intelligence-card').css({ 'border-color': '' })
+            $('#wisdom-card').css({ 'border-color': '' })
+            $('#charisma-card').css({ 'border-color': '' })
         })
         $('#color-scheme-1').on('click', function () {
-            $('[id^=trained]').css({'border-color':'#FDB6C2','color':'#FDB6C2'})
-            $('[id^=expert]').css({'border-color':'#FFFCE6','color':'#FFFCE6'})
-            $('[id^=master]').css({'border-color':'#C2F0F0','color':'#C2F0F0'})
-            $('[id^=legendary]').css({'border-color':'#D3E4FC','color':'#D3E4FC'})
-            $('[id^=fortitude]').css({'border-color':'#FDB6C2','color':'#FDB6C2'})
-            $('[id^=reflex]').css({'border-color':'#FFFCE6','color':'#FFFCE6'})
-            $('[id^=will]').css({'border-color':'#D3E4FC','color':'#D3E4FC'})
+            $('[id^=trained]').css({ 'border-color': '#FDB6C2', 'color': '#FDB6C2' })
+            $('[id^=expert]').css({ 'border-color': '#FFFCE6', 'color': '#FFFCE6' })
+            $('[id^=master]').css({ 'border-color': '#C2F0F0', 'color': '#C2F0F0' })
+            $('[id^=legendary]').css({ 'border-color': '#D3E4FC', 'color': '#D3E4FC' })
+            $('[id^=fortitude]').css({ 'border-color': '#FDB6C2', 'color': '#FDB6C2' })
+            $('[id^=reflex]').css({ 'border-color': '#FFFCE6', 'color': '#FFFCE6' })
+            $('[id^=will]').css({ 'border-color': '#D3E4FC', 'color': '#D3E4FC' })
+
+            $('#strength-card').css({ 'border-color': '#F7CAC9' })
+            $('#dexterity-card').css({ 'border-color': '#C7CBA9' })
+            $('#constitution-card').css({ 'border-color': '#C2F0F0' })
+            $('#intelligence-card').css({ 'border-color': '#D3E4FC' })
+            $('#wisdom-card').css({ 'border-color': '#D5EEF3' })
+            $('#charisma-card').css({ 'border-color': '#FFFCE6' })
         })
         $('#color-scheme-2').on('click', function () {
-            $('[id^=trained]').css({'border-color':'#FFD8D8','color':'#FFD8D8'})
-            $('[id^=expert]').css({'border-color':'#FFEFD5','color':'#FFEFD5'})
-            $('[id^=master]').css({'border-color':'#E6FFE7','color':'#E6FFE7'})
-            $('[id^=legendary]').css({'border-color':'#D5EEF3','color':'#D5EEF3'})
-            $('[id^=fortitude]').css({'border-color':'#FFD8D8','color':'#FFD8D8'})
-            $('[id^=reflex]').css({'border-color':'#FFEFD5','color':'#FFEFD5'})
-            $('[id^=will]').css({'border-color':'#D5EEF3','color':'#D5EEF3'})
+            $('[id^=trained]').css({ 'border-color': '#FFD8D8', 'color': '#FFD8D8' })
+            $('[id^=expert]').css({ 'border-color': '#FFEFD5', 'color': '#FFEFD5' })
+            $('[id^=master]').css({ 'border-color': '#E6FFE7', 'color': '#E6FFE7' })
+            $('[id^=legendary]').css({ 'border-color': '#D5EEF3', 'color': '#D5EEF3' })
+            $('[id^=fortitude]').css({ 'border-color': '#FFD8D8', 'color': '#FFD8D8' })
+            $('[id^=reflex]').css({ 'border-color': '#FFEFD5', 'color': '#FFEFD5' })
+            $('[id^=will]').css({ 'border-color': '#D5EEF3', 'color': '#D5EEF3' })
+
+            $('#strength-card').css({ 'border-color': '#F7CAC9' })
+            $('#dexterity-card').css({ 'border-color': '#C7CBA9' })
+            $('#constitution-card').css({ 'border-color': '#C2F0F0' })
+            $('#intelligence-card').css({ 'border-color': '#D3E4FC' })
+            $('#wisdom-card').css({ 'border-color': '#D5EEF3' })
+            $('#charisma-card').css({ 'border-color': '#FFFCE6' })
         })
         $('#color-scheme-3').on('click', function () {
-            $('[id^=trained]').css({'border-color':'#87CEEB','color':'#87CEEB'})
-            $('[id^=expert]').css({'border-color':'#008080','color':'#008080'})
-            $('[id^=master]').css({'border-color':'#000080','color':'#000080'})
-            $('[id^=legendary]').css({'border-color':'#800080','color':'#800080'})
-            $('[id^=fortitude]').css({'border-color':'#7CB2EB','color':'#7CB2EB'})
-            $('[id^=reflex]').css({'border-color':'#229999','color':'#229999'})
-            $('[id^=will]').css({'border-color':'#333366','color':'#333366'})
+            $('[id^=trained]').css({ 'border-color': '#87CEEB', 'color': '#87CEEB' })
+            $('[id^=expert]').css({ 'border-color': '#008080', 'color': '#008080' })
+            $('[id^=master]').css({ 'border-color': '#000080', 'color': '#000080' })
+            $('[id^=legendary]').css({ 'border-color': '#800080', 'color': '#800080' })
+            $('[id^=fortitude]').css({ 'border-color': '#7CB2EB', 'color': '#7CB2EB' })
+            $('[id^=reflex]').css({ 'border-color': '#229999', 'color': '#229999' })
+            $('[id^=will]').css({ 'border-color': '#333366', 'color': '#333366' })
+
+            $('#strength-card').css({ 'border-color': '#B76233' })
+            $('#dexterity-card').css({ 'border-color': '#8B4513' })
+            $('#constitution-card').css({ 'border-color': '#5A3B29' })
+            $('#intelligence-card').css({ 'border-color': '#008000' })
+            $('#wisdom-card').css({ 'border-color': '#800040' })
+            $('#charisma-card').css({ 'border-color': '#C0C0C0' })
         })
         $('#color-scheme-4').on('click', function () {
-            $('[id^=trained]').css({'border-color':'#228B22','color':'#228B22'})
-            $('[id^=expert]').css({'border-color':'#FFA500','color':'#FFA500'})
-            $('[id^=master]').css({'border-color':'#800080','color':'#800080'})
-            $('[id^=legendary]').css({'border-color':'#FFD700','color':'#FFD700'})
-            $('[id^=fortitude]').css({'border-color':'#8B0000','color':'#8B0000'})
-            $('[id^=reflex]').css({'border-color':'#808000','color':'#808000'})
-            $('[id^=will]').css({'border-color':'#FFA500','color':'#FFA500'})
+            $('[id^=trained]').css({ 'border-color': '#228B22', 'color': '#228B22' })
+            $('[id^=expert]').css({ 'border-color': '#FFA500', 'color': '#FFA500' })
+            $('[id^=master]').css({ 'border-color': '#800080', 'color': '#800080' })
+            $('[id^=legendary]').css({ 'border-color': '#FFD700', 'color': '#FFD700' })
+            $('[id^=fortitude]').css({ 'border-color': '#8B0000', 'color': '#8B0000' })
+            $('[id^=reflex]').css({ 'border-color': '#808000', 'color': '#808000' })
+            $('[id^=will]').css({ 'border-color': '#FFA500', 'color': '#FFA500' })
+
+            $('#strength-card').css({ 'border-color': '#B76233' })
+            $('#dexterity-card').css({ 'border-color': '#8B4513' })
+            $('#constitution-card').css({ 'border-color': '#5A3B29' })
+            $('#intelligence-card').css({ 'border-color': '#008000' })
+            $('#wisdom-card').css({ 'border-color': '#800040' })
+            $('#charisma-card').css({ 'border-color': '#C0C0C0' })
         })
         $('#color-scheme-5').on('click', function () {
-            $('[id^=trained]').css({'border-color':'#CCEEFF','color':'#CCEEFF'})
-            $('[id^=expert]').css({'border-color':'#87CEEB','color':'#87CEEB'})
-            $('[id^=master]').css({'border-color':'#3366CC','color':'#3366CC'})
-            $('[id^=legendary]').css({'border-color':'#FFD700','color':'#FFD700'})
-            $('[id^=fortitude]').css({'border-color':'#333366','color':'#333366'})
-            $('[id^=reflex]').css({'border-color':'#FFD700','color':'#FFD700'})
-            $('[id^=will]').css({'border-color':'#87CEEB','color':'#87CEEB'})
+            $('[id^=trained]').css({ 'border-color': '#CCEEFF', 'color': '#CCEEFF' })
+            $('[id^=expert]').css({ 'border-color': '#87CEEB', 'color': '#87CEEB' })
+            $('[id^=master]').css({ 'border-color': '#3366CC', 'color': '#3366CC' })
+            $('[id^=legendary]').css({ 'border-color': '#FFD700', 'color': '#FFD700' })
+            $('[id^=fortitude]').css({ 'border-color': '#333366', 'color': '#333366' })
+            $('[id^=reflex]').css({ 'border-color': '#FFD700', 'color': '#FFD700' })
+            $('[id^=will]').css({ 'border-color': '#87CEEB', 'color': '#87CEEB' })
+
+            $('#strength-card').css({ 'border-color': '#B76233' })
+            $('#dexterity-card').css({ 'border-color': '#8B4513' })
+            $('#constitution-card').css({ 'border-color': '#5A3B29' })
+            $('#intelligence-card').css({ 'border-color': '#008000' })
+            $('#wisdom-card').css({ 'border-color': '#800040' })
+            $('#charisma-card').css({ 'border-color': '#C0C0C0' })
         })
 
         $('#color-toggle-button').on('click', function () {
@@ -650,11 +1107,25 @@
                 $('html').attr('data-bs-theme', 'light')
                 $('#color-toggle-button').attr('class', 'btn btn-dark')
                 $('#color-toggle-icon').attr('class', 'bi bi-lightbulb')
+
+                // $('#strength-card').css({ 'border-color': '#B76233' })
+                // $('#dexterity-card').css({ 'border-color': '#8B4513' })
+                // $('#constitution-card').css({ 'border-color': '#5A3B29' })
+                // $('#intelligence-card').css({ 'border-color': '#008000' })
+                // $('#wisdom-card').css({ 'border-color': '#800040' })
+                // $('#charisma-card').css({ 'border-color': '#C0C0C0' })
             }
             else {
                 $('html').attr('data-bs-theme', 'dark')
                 $('#color-toggle-button').attr('class', 'btn btn-light')
                 $('#color-toggle-icon').attr('class', 'bi bi-lightbulb-fill')
+
+                // $('#strength-card').css({ 'border-color': '#F7CAC9' })
+                // $('#dexterity-card').css({ 'border-color': '#C7CBA9' })
+                // $('#constitution-card').css({ 'border-color': '#C2F0F0' })
+                // $('#intelligence-card').css({ 'border-color': '#D3E4FC' })
+                // $('#wisdom-card').css({ 'border-color': '#D5EEF3' })
+                // $('#charisma-card').css({ 'border-color': '#FFFCE6' })
             }
         })
     </script>
