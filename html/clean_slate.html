@@ -138,132 +138,237 @@
 
                                             <div class="col-md-auto mb-2">
                                                 <div id="fortitude-card" class="card">
-                                                    <div id="fortitude-card-title"
-                                                        class="card-header text-center fw-bold">
-                                                        Fortitude
+                                                    <div id="fortitude-card-title" class="card-header fw-bold"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#fortitude-details" aria-expanded="false"
+                                                        aria-controls="fortitude-details">
+                                                        <div class="hstack">
+                                                            <div>
+                                                                Fortitude
+                                                            </div>
+                                                            <div class="vr ms-2 me-2"></div>
+                                                            <div class="ms-auto">
+                                                                <h5><code id="fortitude-total-value">+5</code></h5>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <ul class="list-group list-group-flush">
-                                                        <li class="list-group-item text-center">
-                                                            <h5 id="fortitude-text-value" class="fw-bold">+5</h5>
-                                                        </li>
-                                                        <li class="list-group-item">
-                                                            <table class="table table-sm table-hover">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th id="trained-title-fortitude" scope="col">Tr.
-                                                                        </th>
-                                                                        <th id="expert-title-fortitude" scope="col">Ex.
-                                                                        </th>
-                                                                        <th id="master-title-fortitude" scope="col">Ma.
-                                                                        </th>
-                                                                        <th id="legendary-title-fortitude" scope="col">
-                                                                            Le.</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td id="trained-value-fortitude"><i
-                                                                                class="bi bi-check-square-fill"></i>
-                                                                        </td>
-                                                                        <td id="expert-value-fortitude"><i
-                                                                                class="bi bi-square"></i>
-                                                                        </td>
-                                                                        <td id="master-value-fortitude"><i
-                                                                                class="bi bi-square"></i>
-                                                                        </td>
-                                                                        <td id="legendary-value-fortitude"><i
-                                                                                class="bi bi-square"></i></td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </li>
-                                                    </ul>
+                                                    <div id="fortitude-details" class="collapse">
+                                                        <ul class="list-group list-group-flush">
+                                                            <li class="list-group-item list-group-flush">
+                                                                <table
+                                                                    class="table table-sm table-hover">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th scope="col"><small>Type</small></th>
+                                                                            <th scope="col"><small>Value</small></th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+
+                                                                    </tbody>
+                                                                    <tfoot>
+                                                                        <tr class="table-active">
+                                                                            <td><small id="fortitude-total-title" class="fw-bold">Total</small>
+                                                                            </td>
+                                                                            <td class="text-center fw-bold"><code
+                                                                                    id="fortitude-total-value">+5</code></td>
+                                                                        </tr>
+                                                                    </tfoot>
+                                                                </table>
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <table class="table table-sm table-hover">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th id="trained-title-fortitude"
+                                                                                scope="col">Tr.
+                                                                            </th>
+                                                                            <th id="expert-title-fortitude" scope="col">
+                                                                                Ex.
+                                                                            </th>
+                                                                            <th id="master-title-fortitude" scope="col">
+                                                                                Ma.
+                                                                            </th>
+                                                                            <th id="legendary-title-fortitude"
+                                                                                scope="col">
+                                                                                Le.</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td id="trained-value-fortitude"><i
+                                                                                    class="bi bi-check-square-fill"></i>
+                                                                            </td>
+                                                                            <td id="expert-value-fortitude"><i
+                                                                                    class="bi bi-square"></i>
+                                                                            </td>
+                                                                            <td id="master-value-fortitude"><i
+                                                                                    class="bi bi-square"></i>
+                                                                            </td>
+                                                                            <td id="legendary-value-fortitude"><i
+                                                                                    class="bi bi-square"></i></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
                                             </div>
 
                                             <div class="col-md-auto mb-2">
                                                 <div id="reflex-card" class="card">
-                                                    <div id="reflex-card-title" class="card-header text-center fw-bold">
-                                                        Reflex
+                                                    <div id="reflex-card-title" class="card-header fw-bold"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#reflex-details" aria-expanded="false"
+                                                        aria-controls="reflex-details">
+                                                        <div class="hstack">
+                                                            <div>
+                                                                Reflex
+                                                            </div>
+                                                            <div class="vr ms-2 me-2"></div>
+                                                            <div class="ms-auto">
+                                                                <h5><code id="reflex-total-value">+5</code></h5>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <ul class="list-group list-group-flush">
-                                                        <li class="list-group-item text-center">
-                                                            <h5 id="reflex-text-value" class="fw-bold">+5</h5>
-                                                        </li>
-                                                        <li class="list-group-item">
-                                                            <table class="table table-sm table-hover">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th id="trained-title-reflex" scope="col">Tr.
-                                                                        </th>
-                                                                        <th id="expert-title-reflex" scope="col">Ex.
-                                                                        </th>
-                                                                        <th id="master-title-reflex" scope="col">Ma.
-                                                                        </th>
-                                                                        <th id="legendary-title-reflex" scope="col">Le.
-                                                                        </th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td id="trained-value-reflex"><i
-                                                                                class="bi bi-check-square-fill"></i>
-                                                                        </td>
-                                                                        <td id="expert-value-reflex"><i
-                                                                                class="bi bi-square"></i>
-                                                                        </td>
-                                                                        <td id="master-value-reflex"><i
-                                                                                class="bi bi-square"></i>
-                                                                        </td>
-                                                                        <td id="legendary-value-reflex"><i
-                                                                                class="bi bi-square"></i>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </li>
-                                                    </ul>
+                                                    <div id="reflex-details" class="collapse">
+                                                        <ul class="list-group list-group-flush">
+                                                            <li class="list-group-item list-group-flush">
+                                                                <table
+                                                                    class="table table-sm table-hover">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th scope="col"><small>Type</small></th>
+                                                                            <th scope="col"><small>Value</small></th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+
+                                                                    </tbody>
+                                                                    <tfoot>
+                                                                        <tr class="table-active">
+                                                                            <td><small id="reflex-total-title" class="fw-bold">Total</small>
+                                                                            </td>
+                                                                            <td class="text-center fw-bold"><code
+                                                                                    id="reflex-total-value">+5</code></td>
+                                                                        </tr>
+                                                                    </tfoot>
+                                                                </table>
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <table class="table table-sm table-hover">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th id="trained-title-reflex" scope="col">
+                                                                                Tr.
+                                                                            </th>
+                                                                            <th id="expert-title-reflex" scope="col">
+                                                                                Ex.
+                                                                            </th>
+                                                                            <th id="master-title-reflex" scope="col">
+                                                                                Ma.
+                                                                            </th>
+                                                                            <th id="legendary-title-reflex" scope="col">
+                                                                                Le.</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td id="trained-value-reflex"><i
+                                                                                    class="bi bi-check-square-fill"></i>
+                                                                            </td>
+                                                                            <td id="expert-value-reflex"><i
+                                                                                    class="bi bi-square"></i>
+                                                                            </td>
+                                                                            <td id="master-value-reflex"><i
+                                                                                    class="bi bi-square"></i>
+                                                                            </td>
+                                                                            <td id="legendary-value-reflex"><i
+                                                                                    class="bi bi-square"></i></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
                                             </div>
 
                                             <div class="col-md-auto mb-2">
                                                 <div id="will-card" class="card">
-                                                    <div id="will-card-title" class="card-header text-center fw-bold">
-                                                        Will
+                                                    <div id="will-card-title" class="card-header fw-bold" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#will-details"
+                                                        aria-expanded="false" aria-controls="will-details">
+                                                        <div class="hstack">
+                                                            <div>
+                                                                Will
+                                                            </div>
+                                                            <div class="vr ms-2 me-2"></div>
+                                                            <div class="ms-auto">
+                                                                <h5><code id="will-total-value">+8</code></h5>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <ul class="list-group list-group-flush">
-                                                        <li class="list-group-item text-center">
-                                                            <h5 id="will-text-value" class="fw-bold">+8</h5>
-                                                        </li>
-                                                        <li class="list-group-item">
-                                                            <table class="table table-sm table-hover">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th id="trained-title-will" scope="col">Tr.</th>
-                                                                        <th id="expert-title-will" scope="col">Ex.</th>
-                                                                        <th id="master-title-will" scope="col">Ma.</th>
-                                                                        <th id="legendary-title-will" scope="col">Le.
-                                                                        </th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td id="trained-value-will"><i
-                                                                                class="bi bi-square"></i>
-                                                                        </td>
-                                                                        <td id="expert-value-will"><i
-                                                                                class="bi bi-check-square-fill"></i>
-                                                                        </td>
-                                                                        <td id="master-value-will"><i
-                                                                                class="bi bi-square"></i></td>
-                                                                        <td id="legendary-value-will"><i
-                                                                                class="bi bi-square"></i>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </li>
-                                                    </ul>
+                                                    <div id="will-details" class="collapse">
+                                                        <ul class="list-group list-group-flush">
+                                                            <li class="list-group-item list-group-flush">
+                                                                <table
+                                                                    class="table table-sm table-hover">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th scope="col"><small>Type</small></th>
+                                                                            <th scope="col"><small>Value</small></th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+
+                                                                    </tbody>
+                                                                    <tfoot>
+                                                                        <tr class="table-active">
+                                                                            <td><small id="will-total-title" class="fw-bold">Total</small>
+                                                                            </td>
+                                                                            <td class="text-center fw-bold"><code
+                                                                                    id="will-total-value">+8</code></td>
+                                                                        </tr>
+                                                                    </tfoot>
+                                                                </table>
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <table class="table table-sm table-hover">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th id="trained-title-will" scope="col">Tr.
+                                                                            </th>
+                                                                            <th id="expert-title-will" scope="col">
+                                                                                Ex.
+                                                                            </th>
+                                                                            <th id="master-title-will" scope="col">
+                                                                                Ma.
+                                                                            </th>
+                                                                            <th id="legendary-title-will" scope="col">
+                                                                                Le.</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td id="trained-value-will"><i
+                                                                                    class="bi bi-square"></i>
+                                                                            </td>
+                                                                            <td id="expert-value-will"><i
+                                                                                    class="bi bi-check-square-fill"></i>
+                                                                            </td>
+                                                                            <td id="master-value-will"><i
+                                                                                    class="bi bi-square"></i>
+                                                                            </td>
+                                                                            <td id="legendary-value-will"><i
+                                                                                    class="bi bi-square"></i></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
                                             </div>
 
@@ -284,343 +389,289 @@
 
                                     <div class="col-md-auto mb-2">
                                         <div id="strength-card" class="card">
-                                            <div id="strength-card-title" class="card-header text-center fw-bold">
-                                                Strength
-                                            </div>
-                                            <div class="card-body">
-                                                <div class="hstack col-lg-auto text-center">
+                                            <div id="strength-card-title" class="card-header fw-bold" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#strength-details"
+                                                aria-expanded="false" aria-controls="strength-details">
+                                                <div class="hstack">
                                                     <div>
-                                                        <table id="strength-modifier-table"
-                                                            class="table table-sm table-hover">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th scope="col">
-                                                                        <h6 id="strength-modifier-text-title">
-                                                                            Modifier</h6>
-                                                                    </th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td scope="col">
-                                                                        <h5 id="strength-modifier-text-value"
-                                                                            class="fw-bold">
-                                                                            +0</h5>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
+                                                        Strength
                                                     </div>
                                                     <div class="vr ms-2 me-2"></div>
-                                                    <div>
-                                                        <table id="strength-total-table"
-                                                            class="table table-sm table-hover">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th scope="col">
-                                                                        <h6 id="strength-total-text-title">
-                                                                            Total</h6>
-                                                                    </th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td scope="col">
-                                                                        <h5 id="strength-total-text-value"
-                                                                            class="fw-bold">
-                                                                            10</h5>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
+                                                    <div class="ms-auto">
+                                                        <h5><code id="strength-total-value">+0</code></h5>
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div id="strength-details" class="collapse">
+                                                <div class="card-body">
+                                                    <table class="table table-sm table-hover">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col"><small>Type</small></th>
+                                                                <th scope="col"><small>Value</small></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><small
+                                                                        id="strength-build-modifiers-title">Build Modifiers</small>
+                                                                </td>
+                                                                <td class="text-center"><code
+                                                                        id="strength-build-modifiers-value">+0</code></td>
+                                                            </tr>
+                                                        </tbody>
+                                                        <tfoot>
+                                                            <tr class="table-active">
+                                                                <td><small id="strength-total-title" class="fw-bold">Score</small>
+                                                                </td>
+                                                                <td class="text-center fw-bold"><code
+                                                                        id="strength-total-value">10</code></td>
+                                                            </tr>
+                                                        </tfoot>
+                                                    </table>
+                                                </div>
+                                            </div>
+
                                         </div>
                                     </div>
 
                                     <div class="col-md-auto mb-2">
                                         <div id="dexterity-card" class="card">
-                                            <div id="dexterity-card-title" class="card-header text-center fw-bold">
-                                                Dexterity
-                                            </div>
-                                            <div class="card-body">
-                                                <div class="hstack col-lg-auto text-center">
+                                            <div id="dexterity-card-title" class="card-header fw-bold" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#dexterity-details"
+                                                aria-expanded="false" aria-controls="dexterity-details">
+                                                <div class="hstack">
                                                     <div>
-                                                        <table id="dexterity-modifier-table"
-                                                            class="table table-sm table-hover">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th scope="col">
-                                                                        <h6 id="dexterity-modifier-text-title">
-                                                                            Modifier</h6>
-                                                                    </th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td scope="col">
-                                                                        <h5 id="dexterity-modifier-text-value"
-                                                                            class="fw-bold">
-                                                                            +1</h5>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
+                                                        Dexterity
                                                     </div>
                                                     <div class="vr ms-2 me-2"></div>
-                                                    <div>
-                                                        <table id="dexterity-total-table"
-                                                            class="table table-sm table-hover">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th scope="col">
-                                                                        <h6 id="dexterity-total-text-title">
-                                                                            Total</h6>
-                                                                    </th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td scope="col">
-                                                                        <h5 id="dexterity-total-text-value"
-                                                                            class="fw-bold">
-                                                                            12</h5>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
+                                                    <div class="ms-auto">
+                                                        <h5><code id="dexterity-total-value">+1</code></h5>
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div id="dexterity-details" class="collapse">
+                                                <div class="card-body">
+                                                    <table class="table table-sm table-hover">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col"><small>Type</small></th>
+                                                                <th scope="col"><small>Value</small></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><small
+                                                                        id="dexterity-build-modifiers-title">Build Modifiers</small>
+                                                                </td>
+                                                                <td class="text-center"><code
+                                                                        id="dexterity-build-modifiers-value">+1</code></td>
+                                                            </tr>
+                                                        </tbody>
+                                                        <tfoot>
+                                                            <tr class="table-active">
+                                                                <td><small id="dexterity-total-title" class="fw-bold">Score</small>
+                                                                </td>
+                                                                <td class="text-center fw-bold"><code
+                                                                        id="dexterity-total-value">12</code></td>
+                                                            </tr>
+                                                        </tfoot>
+                                                    </table>
+                                                </div>
+                                            </div>
+
                                         </div>
                                     </div>
 
                                     <div class="col-md-auto mb-2">
                                         <div id="constitution-card" class="card">
-                                            <div id="constitution-card-title" class="card-header text-center fw-bold">
-                                                Constitution
-                                            </div>
-                                            <div class="card-body">
-                                                <div class="hstack col-lg-auto text-center">
+                                            <div id="constitution-card-title" class="card-header fw-bold" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#constitution-details"
+                                                aria-expanded="false" aria-controls="constitution-details">
+                                                <div class="hstack">
                                                     <div>
-                                                        <table id="constitution-modifier-table"
-                                                            class="table table-sm table-hover">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th scope="col">
-                                                                        <h6 id="constitution-modifier-text-title">
-                                                                            Modifier</h6>
-                                                                    </th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td scope="col">
-                                                                        <h5 id="constitution-modifier-text-value"
-                                                                            class="fw-bold">
-                                                                            +1</h5>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
+                                                        Constitution
                                                     </div>
                                                     <div class="vr ms-2 me-2"></div>
-                                                    <div>
-                                                        <table id="constitution-total-table"
-                                                            class="table table-sm table-hover">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th scope="col">
-                                                                        <h6 id="constitution-total-text-title">
-                                                                            Total</h6>
-                                                                    </th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td scope="col">
-                                                                        <h5 id="constitution-total-text-value"
-                                                                            class="fw-bold">
-                                                                            12</h5>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
+                                                    <div class="ms-auto">
+                                                        <h5><code id="constitution-total-value">+1</code></h5>
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div id="constitution-details" class="collapse">
+                                                <div class="card-body">
+                                                    <table class="table table-sm table-hover">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col"><small>Type</small></th>
+                                                                <th scope="col"><small>Value</small></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><small
+                                                                        id="constitution-build-modifiers-title">Build Modifiers</small>
+                                                                </td>
+                                                                <td class="text-center"><code
+                                                                        id="constitution-build-modifiers-value">+1</code></td>
+                                                            </tr>
+                                                        </tbody>
+                                                        <tfoot>
+                                                            <tr class="table-active">
+                                                                <td><small id="constitution-total-title" class="fw-bold">Score</small>
+                                                                </td>
+                                                                <td class="text-center fw-bold"><code
+                                                                        id="constitution-total-value">12</code></td>
+                                                            </tr>
+                                                        </tfoot>
+                                                    </table>
+                                                </div>
+                                            </div>
+
                                         </div>
                                     </div>
 
                                     <div class="col-md-auto mb-2">
                                         <div id="intelligence-card" class="card">
-                                            <div id="intelligence-card-title" class="card-header text-center fw-bold">
-                                                Intelligence
-                                            </div>
-                                            <div class="card-body">
-                                                <div class="hstack col-lg-auto text-center">
+                                            <div id="intelligence-card-title" class="card-header fw-bold" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#intelligence-details"
+                                                aria-expanded="false" aria-controls="intelligence-details">
+                                                <div class="hstack">
                                                     <div>
-                                                        <table id="intelligence-modifier-table"
-                                                            class="table table-sm table-hover">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th scope="col">
-                                                                        <h6 id="intelligence-modifier-text-title">
-                                                                            Modifier</h6>
-                                                                    </th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td scope="col">
-                                                                        <h5 id="intelligence-modifier-text-value"
-                                                                            class="fw-bold">
-                                                                            +4</h5>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
+                                                        Intelligence
                                                     </div>
                                                     <div class="vr ms-2 me-2"></div>
-                                                    <div>
-                                                        <table id="intelligence-total-table"
-                                                            class="table table-sm table-hover">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th scope="col">
-                                                                        <h6 id="intelligence-total-text-title">
-                                                                            Total</h6>
-                                                                    </th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td scope="col">
-                                                                        <h5 id="intelligence-total-text-value"
-                                                                            class="fw-bold">
-                                                                            19</h5>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
+                                                    <div class="ms-auto">
+                                                        <h5><code id="intelligence-total-value">+4</code></h5>
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div id="intelligence-details" class="collapse">
+                                                <div class="card-body">
+                                                    <table class="table table-sm table-hover">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col"><small>Type</small></th>
+                                                                <th scope="col"><small>Value</small></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><small
+                                                                        id="intelligence-build-modifiers-title">Build Modifiers</small>
+                                                                </td>
+                                                                <td class="text-center"><code
+                                                                        id="intelligence-build-modifiers-value">+4</code></td>
+                                                            </tr>
+                                                        </tbody>
+                                                        <tfoot>
+                                                            <tr class="table-active">
+                                                                <td><small id="intelligence-total-title" class="fw-bold">Score</small>
+                                                                </td>
+                                                                <td class="text-center fw-bold"><code
+                                                                        id="intelligence-total-value">19</code></td>
+                                                            </tr>
+                                                        </tfoot>
+                                                    </table>
+                                                </div>
+                                            </div>
+
                                         </div>
                                     </div>
 
                                     <div class="col-md-auto mb-2">
                                         <div id="wisdom-card" class="card">
-                                            <div id="wisdom-card-title" class="card-header text-center fw-bold">
-                                                Wisdom
-                                            </div>
-                                            <div class="card-body">
-                                                <div class="hstack col-lg-auto text-center">
+                                            <div id="wisdom-card-title" class="card-header fw-bold" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#wisdom-details"
+                                                aria-expanded="false" aria-controls="wisdom-details">
+                                                <div class="hstack">
                                                     <div>
-                                                        <table id="wisdom-modifier-table"
-                                                            class="table table-sm table-hover">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th scope="col">
-                                                                        <h6 id="wisdom-modifier-text-title">
-                                                                            Modifier</h6>
-                                                                    </th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td scope="col">
-                                                                        <h5 id="wisdom-modifier-text-value"
-                                                                            class="fw-bold">
-                                                                            +2</h5>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
+                                                        Wisdom
                                                     </div>
                                                     <div class="vr ms-2 me-2"></div>
-                                                    <div>
-                                                        <table id="wisdom-total-table"
-                                                            class="table table-sm table-hover">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th scope="col">
-                                                                        <h6 id="wisdom-total-text-title">
-                                                                            Total</h6>
-                                                                    </th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td scope="col">
-                                                                        <h5 id="wisdom-total-text-value"
-                                                                            class="fw-bold">
-                                                                            14</h5>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
+                                                    <div class="ms-auto">
+                                                        <h5><code id="wisdom-total-value">+2</code></h5>
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div id="wisdom-details" class="collapse">
+                                                <div class="card-body">
+                                                    <table class="table table-sm table-hover">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col"><small>Type</small></th>
+                                                                <th scope="col"><small>Value</small></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><small
+                                                                        id="wisdom-build-modifiers-title">Build Modifiers</small>
+                                                                </td>
+                                                                <td class="text-center"><code
+                                                                        id="wisdom-build-modifiers-value">+2</code></td>
+                                                            </tr>
+                                                        </tbody>
+                                                        <tfoot>
+                                                            <tr class="table-active">
+                                                                <td><small id="wisdom-total-title" class="fw-bold">Score</small>
+                                                                </td>
+                                                                <td class="text-center fw-bold"><code
+                                                                        id="wisdom-total-value">14</code></td>
+                                                            </tr>
+                                                        </tfoot>
+                                                    </table>
+                                                </div>
+                                            </div>
+
                                         </div>
                                     </div>
 
                                     <div class="col-md-auto mb-2">
                                         <div id="charisma-card" class="card">
-                                            <div id="charisma-card-title" class="card-header text-center fw-bold">
-                                                Charisma
-                                            </div>
-                                            <div class="card-body">
-                                                <div class="hstack col-lg-auto text-center">
+                                            <div id="charisma-card-title" class="card-header fw-bold" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#charisma-details"
+                                                aria-expanded="false" aria-controls="charisma-details">
+                                                <div class="hstack">
                                                     <div>
-                                                        <table id="charisma-modifier-table"
-                                                            class="table table-sm table-hover">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th scope="col">
-                                                                        <h6 id="charisma-modifier-text-title">
-                                                                            Modifier</h6>
-                                                                    </th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td scope="col">
-                                                                        <h5 id="charisma-modifier-text-value"
-                                                                            class="fw-bold">
-                                                                            +0</h5>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
+                                                        Charisma
                                                     </div>
                                                     <div class="vr ms-2 me-2"></div>
-                                                    <div>
-                                                        <table id="charisma-total-table"
-                                                            class="table table-sm table-hover">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th scope="col">
-                                                                        <h6 id="charisma-total-text-title">
-                                                                            Total</h6>
-                                                                    </th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td scope="col">
-                                                                        <h5 id="charisma-total-text-value"
-                                                                            class="fw-bold">
-                                                                            10</h5>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
+                                                    <div class="ms-auto">
+                                                        <h5><code id="charisma-total-value">+0</code></h5>
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div id="charisma-details" class="collapse">
+                                                <div class="card-body">
+                                                    <table class="table table-sm table-hover">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col"><small>Type</small></th>
+                                                                <th scope="col"><small>Value</small></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><small
+                                                                        id="charisma-build-modifiers-title">Build Modifiers</small>
+                                                                </td>
+                                                                <td class="text-center"><code
+                                                                        id="charisma-build-modifiers-value">+0</code></td>
+                                                            </tr>
+                                                        </tbody>
+                                                        <tfoot>
+                                                            <tr class="table-active">
+                                                                <td><small id="charisma-total-title" class="fw-bold">Score</small>
+                                                                </td>
+                                                                <td class="text-center fw-bold"><code
+                                                                        id="charisma-total-value">10</code></td>
+                                                            </tr>
+                                                        </tfoot>
+                                                    </table>
+                                                </div>
+                                            </div>
+
                                         </div>
                                     </div>
 
@@ -658,11 +709,11 @@
                                             <div id="acrobatics-details" class="collapse">
                                                 <ul class="list-group list-group-flush">
                                                     <li class="list-group-item list-group-flush">
-                                                        <table class="table table-sm table-hover table-bordered">
+                                                        <table class="table table-sm table-hover">
                                                             <thead>
                                                                 <tr>
                                                                     <th scope="col"><small>Type</small></th>
-                                                                    <th scope="col"><small>Modifier</small></th>
+                                                                    <th scope="col"><small>Value</small></th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
@@ -688,6 +739,14 @@
                                                                             id="acrobatics-item-value">0</code></td>
                                                                 </tr>
                                                             </tbody>
+                                                            <tfoot>
+                                                                <tr class="table-active">
+                                                                    <td><small id="acrobatics-total-title" class="fw-bold">Total</small>
+                                                                    </td>
+                                                                    <td class="text-center fw-bold"><code
+                                                                            id="acrobatics-total-value">+5</code></td>
+                                                                </tr>
+                                                            </tfoot>
                                                         </table>
                                                     </li>
                                                     <li class="list-group-item">
@@ -744,11 +803,11 @@
                                             <div id="arcana-details" class="collapse">
                                                 <ul class="list-group list-group-flush">
                                                     <li class="list-group-item list-group-flush">
-                                                        <table class="table table-sm table-hover table-bordered">
+                                                        <table class="table table-sm table-hover">
                                                             <thead>
                                                                 <tr>
                                                                     <th scope="col"><small>Type</small></th>
-                                                                    <th scope="col"><small>Modifier</small></th>
+                                                                    <th scope="col"><small>Value</small></th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
@@ -772,6 +831,14 @@
                                                                             id="arcana-item-value">0</code></td>
                                                                 </tr>
                                                             </tbody>
+                                                            <tfoot>
+                                                                <tr class="table-active">
+                                                                    <td><small id="arcana-total-title" class="fw-bold">Total</small>
+                                                                    </td>
+                                                                    <td class="text-center fw-bold"><code
+                                                                            id="arcana-total-value">+5</code></td>
+                                                                </tr>
+                                                            </tfoot>
                                                         </table>
                                                     </li>
                                                     <li class="list-group-item">
@@ -828,11 +895,11 @@
                                             <div id="athletics-details" class="collapse">
                                                 <ul class="list-group list-group-flush">
                                                     <li class="list-group-item list-group-flush">
-                                                        <table class="table table-sm table-hover table-bordered">
+                                                        <table class="table table-sm table-hover">
                                                             <thead>
                                                                 <tr>
                                                                     <th scope="col"><small>Type</small></th>
-                                                                    <th scope="col"><small>Modifier</small></th>
+                                                                    <th scope="col"><small>Value</small></th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
@@ -858,6 +925,14 @@
                                                                             id="athletics-item-value">0</code></td>
                                                                 </tr>
                                                             </tbody>
+                                                            <tfoot>
+                                                                <tr class="table-active">
+                                                                    <td><small id="athletics-total-title" class="fw-bold">Total</small>
+                                                                    </td>
+                                                                    <td class="text-center fw-bold"><code
+                                                                            id="athletics-total-value">+5</code></td>
+                                                                </tr>
+                                                            </tfoot>
                                                         </table>
                                                     </li>
                                                     <li class="list-group-item">
@@ -914,11 +989,11 @@
                                             <div id="crafting-details" class="collapse">
                                                 <ul class="list-group list-group-flush">
                                                     <li class="list-group-item list-group-flush">
-                                                        <table class="table table-sm table-hover table-bordered">
+                                                        <table class="table table-sm table-hover">
                                                             <thead>
                                                                 <tr>
                                                                     <th scope="col"><small>Type</small></th>
-                                                                    <th scope="col"><small>Modifier</small></th>
+                                                                    <th scope="col"><small>Value</small></th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
@@ -944,6 +1019,14 @@
                                                                             id="crafting-item-value">0</code></td>
                                                                 </tr>
                                                             </tbody>
+                                                            <tfoot>
+                                                                <tr class="table-active">
+                                                                    <td><small id="crafting-total-title" class="fw-bold">Total</small>
+                                                                    </td>
+                                                                    <td class="text-center fw-bold"><code
+                                                                            id="crafting-total-value">+5</code></td>
+                                                                </tr>
+                                                            </tfoot>
                                                         </table>
                                                     </li>
                                                     <li class="list-group-item">
@@ -1000,11 +1083,11 @@
                                             <div id="deception-details" class="collapse">
                                                 <ul class="list-group list-group-flush">
                                                     <li class="list-group-item list-group-flush">
-                                                        <table class="table table-sm table-hover table-bordered">
+                                                        <table class="table table-sm table-hover">
                                                             <thead>
                                                                 <tr>
                                                                     <th scope="col"><small>Type</small></th>
-                                                                    <th scope="col"><small>Modifier</small></th>
+                                                                    <th scope="col"><small>Value</small></th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
@@ -1030,6 +1113,14 @@
                                                                             id="deception-item-value">0</code></td>
                                                                 </tr>
                                                             </tbody>
+                                                            <tfoot>
+                                                                <tr class="table-active">
+                                                                    <td><small id="deception-total-title" class="fw-bold">Total</small>
+                                                                    </td>
+                                                                    <td class="text-center fw-bold"><code
+                                                                            id="deception-total-value">+5</code></td>
+                                                                </tr>
+                                                            </tfoot>
                                                         </table>
                                                     </li>
                                                     <li class="list-group-item">
@@ -1086,11 +1177,11 @@
                                             <div id="diplomacy-details" class="collapse">
                                                 <ul class="list-group list-group-flush">
                                                     <li class="list-group-item list-group-flush">
-                                                        <table class="table table-sm table-hover table-bordered">
+                                                        <table class="table table-sm table-hover">
                                                             <thead>
                                                                 <tr>
                                                                     <th scope="col"><small>Type</small></th>
-                                                                    <th scope="col"><small>Modifier</small></th>
+                                                                    <th scope="col"><small>Value</small></th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
@@ -1116,6 +1207,14 @@
                                                                             id="diplomacy-item-value">0</code></td>
                                                                 </tr>
                                                             </tbody>
+                                                            <tfoot>
+                                                                <tr class="table-active">
+                                                                    <td><small id="diplomacy-total-title" class="fw-bold">Total</small>
+                                                                    </td>
+                                                                    <td class="text-center fw-bold"><code
+                                                                            id="diplomacy-total-value">+5</code></td>
+                                                                </tr>
+                                                            </tfoot>
                                                         </table>
                                                     </li>
                                                     <li class="list-group-item">
@@ -1172,11 +1271,11 @@
                                             <div id="intimidation-details" class="collapse">
                                                 <ul class="list-group list-group-flush">
                                                     <li class="list-group-item list-group-flush">
-                                                        <table class="table table-sm table-hover table-bordered">
+                                                        <table class="table table-sm table-hover">
                                                             <thead>
                                                                 <tr>
                                                                     <th scope="col"><small>Type</small></th>
-                                                                    <th scope="col"><small>Modifier</small></th>
+                                                                    <th scope="col"><small>Value</small></th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
@@ -1203,6 +1302,14 @@
                                                                             id="intimidation-item-value">0</code></td>
                                                                 </tr>
                                                             </tbody>
+                                                            <tfoot>
+                                                                <tr class="table-active">
+                                                                    <td><small id="intimidation-total-title" class="fw-bold">Total</small>
+                                                                    </td>
+                                                                    <td class="text-center fw-bold"><code
+                                                                            id="intimidation-total-value">+5</code></td>
+                                                                </tr>
+                                                            </tfoot>
                                                         </table>
                                                     </li>
                                                     <li class="list-group-item">
@@ -1260,11 +1367,11 @@
                                             <div id="lore-library-details" class="collapse">
                                                 <ul class="list-group list-group-flush">
                                                     <li class="list-group-item list-group-flush">
-                                                        <table class="table table-sm table-hover table-bordered">
+                                                        <table class="table table-sm table-hover">
                                                             <thead>
                                                                 <tr>
                                                                     <th scope="col"><small>Type</small></th>
-                                                                    <th scope="col"><small>Modifier</small></th>
+                                                                    <th scope="col"><small>Value</small></th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
@@ -1291,6 +1398,14 @@
                                                                             id="lore-library-item-value">0</code></td>
                                                                 </tr>
                                                             </tbody>
+                                                            <tfoot>
+                                                                <tr class="table-active">
+                                                                    <td><small id="lore-library-total-title" class="fw-bold">Total</small>
+                                                                    </td>
+                                                                    <td class="text-center fw-bold"><code
+                                                                            id="lore-library-total-value">+5</code></td>
+                                                                </tr>
+                                                            </tfoot>
                                                         </table>
                                                     </li>
                                                     <li class="list-group-item">
@@ -1348,11 +1463,11 @@
                                             <div id="medicine-details" class="collapse">
                                                 <ul class="list-group list-group-flush">
                                                     <li class="list-group-item list-group-flush">
-                                                        <table class="table table-sm table-hover table-bordered">
+                                                        <table class="table table-sm table-hover">
                                                             <thead>
                                                                 <tr>
                                                                     <th scope="col"><small>Type</small></th>
-                                                                    <th scope="col"><small>Modifier</small></th>
+                                                                    <th scope="col"><small>Value</small></th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
@@ -1378,6 +1493,14 @@
                                                                             id="medicine-item-value">0</code></td>
                                                                 </tr>
                                                             </tbody>
+                                                            <tfoot>
+                                                                <tr class="table-active">
+                                                                    <td><small id="medicine-total-title" class="fw-bold">Total</small>
+                                                                    </td>
+                                                                    <td class="text-center fw-bold"><code
+                                                                            id="medicine-total-value">+5</code></td>
+                                                                </tr>
+                                                            </tfoot>
                                                         </table>
                                                     </li>
                                                     <li class="list-group-item">
@@ -1434,11 +1557,11 @@
                                             <div id="nature-details" class="collapse">
                                                 <ul class="list-group list-group-flush">
                                                     <li class="list-group-item list-group-flush">
-                                                        <table class="table table-sm table-hover table-bordered">
+                                                        <table class="table table-sm table-hover">
                                                             <thead>
                                                                 <tr>
                                                                     <th scope="col"><small>Type</small></th>
-                                                                    <th scope="col"><small>Modifier</small></th>
+                                                                    <th scope="col"><small>Value</small></th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
@@ -1462,6 +1585,14 @@
                                                                             id="nature-item-value">0</code></td>
                                                                 </tr>
                                                             </tbody>
+                                                            <tfoot>
+                                                                <tr class="table-active">
+                                                                    <td><small id="nature-total-title" class="fw-bold">Total</small>
+                                                                    </td>
+                                                                    <td class="text-center fw-bold"><code
+                                                                            id="nature-total-value">+5</code></td>
+                                                                </tr>
+                                                            </tfoot>
                                                         </table>
                                                     </li>
                                                     <li class="list-group-item">
@@ -1518,11 +1649,11 @@
                                             <div id="occultism-details" class="collapse">
                                                 <ul class="list-group list-group-flush">
                                                     <li class="list-group-item list-group-flush">
-                                                        <table class="table table-sm table-hover table-bordered">
+                                                        <table class="table table-sm table-hover">
                                                             <thead>
                                                                 <tr>
                                                                     <th scope="col"><small>Type</small></th>
-                                                                    <th scope="col"><small>Modifier</small></th>
+                                                                    <th scope="col"><small>Value</small></th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
@@ -1548,6 +1679,14 @@
                                                                             id="occultism-item-value">0</code></td>
                                                                 </tr>
                                                             </tbody>
+                                                            <tfoot>
+                                                                <tr class="table-active">
+                                                                    <td><small id="occultism-total-title" class="fw-bold">Total</small>
+                                                                    </td>
+                                                                    <td class="text-center fw-bold"><code
+                                                                            id="occultism-total-value">+5</code></td>
+                                                                </tr>
+                                                            </tfoot>
                                                         </table>
                                                     </li>
                                                     <li class="list-group-item">
@@ -1604,11 +1743,11 @@
                                             <div id="performance-details" class="collapse">
                                                 <ul class="list-group list-group-flush">
                                                     <li class="list-group-item list-group-flush">
-                                                        <table class="table table-sm table-hover table-bordered">
+                                                        <table class="table table-sm table-hover">
                                                             <thead>
                                                                 <tr>
                                                                     <th scope="col"><small>Type</small></th>
-                                                                    <th scope="col"><small>Modifier</small></th>
+                                                                    <th scope="col"><small>Value</small></th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
@@ -1635,6 +1774,14 @@
                                                                             id="performance-item-value">0</code></td>
                                                                 </tr>
                                                             </tbody>
+                                                            <tfoot>
+                                                                <tr class="table-active">
+                                                                    <td><small id="performance-total-title" class="fw-bold">Total</small>
+                                                                    </td>
+                                                                    <td class="text-center fw-bold"><code
+                                                                            id="performance-total-value">+5</code></td>
+                                                                </tr>
+                                                            </tfoot>
                                                         </table>
                                                     </li>
                                                     <li class="list-group-item">
@@ -1691,11 +1838,11 @@
                                             <div id="religion-details" class="collapse">
                                                 <ul class="list-group list-group-flush">
                                                     <li class="list-group-item list-group-flush">
-                                                        <table class="table table-sm table-hover table-bordered">
+                                                        <table class="table table-sm table-hover">
                                                             <thead>
                                                                 <tr>
                                                                     <th scope="col"><small>Type</small></th>
-                                                                    <th scope="col"><small>Modifier</small></th>
+                                                                    <th scope="col"><small>Value</small></th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
@@ -1721,6 +1868,14 @@
                                                                             id="religion-item-value">0</code></td>
                                                                 </tr>
                                                             </tbody>
+                                                            <tfoot>
+                                                                <tr class="table-active">
+                                                                    <td><small id="religion-total-title" class="fw-bold">Total</small>
+                                                                    </td>
+                                                                    <td class="text-center fw-bold"><code
+                                                                            id="religion-total-value">+5</code></td>
+                                                                </tr>
+                                                            </tfoot>
                                                         </table>
                                                     </li>
                                                     <li class="list-group-item">
@@ -1777,11 +1932,11 @@
                                             <div id="society-details" class="collapse">
                                                 <ul class="list-group list-group-flush">
                                                     <li class="list-group-item list-group-flush">
-                                                        <table class="table table-sm table-hover table-bordered">
+                                                        <table class="table table-sm table-hover">
                                                             <thead>
                                                                 <tr>
                                                                     <th scope="col"><small>Type</small></th>
-                                                                    <th scope="col"><small>Modifier</small></th>
+                                                                    <th scope="col"><small>Value</small></th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
@@ -1806,6 +1961,14 @@
                                                                             id="society-item-value">0</code></td>
                                                                 </tr>
                                                             </tbody>
+                                                            <tfoot>
+                                                                <tr class="table-active">
+                                                                    <td><small id="society-total-title" class="fw-bold">Total</small>
+                                                                    </td>
+                                                                    <td class="text-center fw-bold"><code
+                                                                            id="society-total-value">+5</code></td>
+                                                                </tr>
+                                                            </tfoot>
                                                         </table>
                                                     </li>
                                                     <li class="list-group-item">
@@ -1862,11 +2025,11 @@
                                             <div id="stealth-details" class="collapse">
                                                 <ul class="list-group list-group-flush">
                                                     <li class="list-group-item list-group-flush">
-                                                        <table class="table table-sm table-hover table-bordered">
+                                                        <table class="table table-sm table-hover">
                                                             <thead>
                                                                 <tr>
                                                                     <th scope="col"><small>Type</small></th>
-                                                                    <th scope="col"><small>Modifier</small></th>
+                                                                    <th scope="col"><small>Value</small></th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
@@ -1891,6 +2054,14 @@
                                                                             id="stealth-item-value">0</code></td>
                                                                 </tr>
                                                             </tbody>
+                                                            <tfoot>
+                                                                <tr class="table-active">
+                                                                    <td><small id="stealth-total-title" class="fw-bold">Total</small>
+                                                                    </td>
+                                                                    <td class="text-center fw-bold"><code
+                                                                            id="stealth-total-value">+5</code></td>
+                                                                </tr>
+                                                            </tfoot>
                                                         </table>
                                                     </li>
                                                     <li class="list-group-item">
@@ -1947,11 +2118,11 @@
                                             <div id="survival-details" class="collapse">
                                                 <ul class="list-group list-group-flush">
                                                     <li class="list-group-item list-group-flush">
-                                                        <table class="table table-sm table-hover table-bordered">
+                                                        <table class="table table-sm table-hover">
                                                             <thead>
                                                                 <tr>
                                                                     <th scope="col"><small>Type</small></th>
-                                                                    <th scope="col"><small>Modifier</small></th>
+                                                                    <th scope="col"><small>Value</small></th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
@@ -1977,6 +2148,14 @@
                                                                             id="survival-item-value">0</code></td>
                                                                 </tr>
                                                             </tbody>
+                                                            <tfoot>
+                                                                <tr class="table-active">
+                                                                    <td><small id="survival-total-title" class="fw-bold">Total</small>
+                                                                    </td>
+                                                                    <td class="text-center fw-bold"><code
+                                                                            id="survival-total-value">+5</code></td>
+                                                                </tr>
+                                                            </tfoot>
                                                         </table>
                                                     </li>
                                                     <li class="list-group-item">
@@ -2033,11 +2212,11 @@
                                             <div id="thievery-details" class="collapse">
                                                 <ul class="list-group list-group-flush">
                                                     <li class="list-group-item list-group-flush">
-                                                        <table class="table table-sm table-hover table-bordered">
+                                                        <table class="table table-sm table-hover">
                                                             <thead>
                                                                 <tr>
                                                                     <th scope="col"><small>Type</small></th>
-                                                                    <th scope="col"><small>Modifier</small></th>
+                                                                    <th scope="col"><small>Value</small></th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
@@ -2063,6 +2242,14 @@
                                                                             id="thievery-item-value">0</code></td>
                                                                 </tr>
                                                             </tbody>
+                                                            <tfoot>
+                                                                <tr class="table-active">
+                                                                    <td><small id="thievery-total-title" class="fw-bold">Total</small>
+                                                                    </td>
+                                                                    <td class="text-center fw-bold"><code
+                                                                            id="thievery-total-value">+5</code></td>
+                                                                </tr>
+                                                            </tfoot>
                                                         </table>
                                                     </li>
                                                     <li class="list-group-item">
@@ -2577,11 +2764,24 @@
             }
         })
 
+        function collapseEverything(groupName) {
+            const collapseElementList = document.querySelectorAll(`#${groupName} .collapse`)
+            const collapseList = [...collapseElementList].map(collapseEl => new bootstrap.Collapse(collapseEl))
+        }
+
+        $('#saves-collapse-toggle').on('click', function () {
+            let theValue = $('#saves-collapse-toggle').is(':checked')
+            collapseEverything('saves')
+        })
+
+        $('#abilities-collapse-toggle').on('click', function () {
+            let theValue = $('#abilities-collapse-toggle').is(':checked')
+            collapseEverything('abilities')
+        })
+
         $('#skills-collapse-toggle').on('click', function () {
             let theValue = $('#skills-collapse-toggle').is(':checked')
-            console.log(`theValue = ${theValue}`)
-            const collapseElementList = document.querySelectorAll('#skills .collapse')
-            const collapseList = [...collapseElementList].map(collapseEl => new bootstrap.Collapse(collapseEl))
+            collapseEverything('skills')
         })
     </script>
 </body>
