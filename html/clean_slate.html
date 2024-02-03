@@ -128,178 +128,142 @@
                                 <div class="row">
                                     <div class="col">
                                         <h6 class="fw-bold">Saves</h6>
-                                        <div class="hstack col-12 text-center">
-                                            <div>
-                                                <table id="fortitude-table" class="table table-sm table-hover">
-                                                    <thead>
-                                                        <tr>
-                                                            <th scope="col">
-                                                                <h6 id="fortitude-text-title" class="fw-bold">Fortitude
-                                                                </h6>
-                                                            </th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td scope="col">
-                                                                <h5 id="fortitude-text-value" class="fw-bold">+5</h5>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                                <table class="table table-sm table-hover">
-                                                    <thead>
-                                                        <tr>
-                                                            <th id="trained-title-fortitude" scope="col">Tr.</th>
-                                                            <th id="expert-title-fortitude" scope="col">Ex.</th>
-                                                            <th id="master-title-fortitude" scope="col">Ma.</th>
-                                                            <th id="legendary-title-fortitude" scope="col">Le.</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td id="trained-value-fortitude"><i
-                                                                    class="bi bi-check-square-fill"></i></td>
-                                                            <td id="expert-value-fortitude"><i class="bi bi-square"></i>
-                                                            </td>
-                                                            <td id="master-value-fortitude"><i class="bi bi-square"></i>
-                                                            </td>
-                                                            <td id="legendary-value-fortitude"><i
-                                                                    class="bi bi-square"></i></td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
+                                        <div class="row row-cols-2">
+
+                                            <div class="col-md-auto mb-2">
+                                                <div id="fortitude-card" class="card">
+                                                    <div id="fortitude-card-title"
+                                                        class="card-header text-center fw-bold">
+                                                        Fortitude
+                                                    </div>
+                                                    <ul class="list-group list-group-flush">
+                                                        <li class="list-group-item text-center">
+                                                            <h5 id="fortitude-text-value" class="fw-bold">+5</h5>
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <table class="table table-sm table-hover">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th id="trained-title-fortitude" scope="col">Tr.
+                                                                        </th>
+                                                                        <th id="expert-title-fortitude" scope="col">Ex.
+                                                                        </th>
+                                                                        <th id="master-title-fortitude" scope="col">Ma.
+                                                                        </th>
+                                                                        <th id="legendary-title-fortitude" scope="col">
+                                                                            Le.</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td id="trained-value-fortitude"><i
+                                                                                class="bi bi-check-square-fill"></i>
+                                                                        </td>
+                                                                        <td id="expert-value-fortitude"><i
+                                                                                class="bi bi-square"></i>
+                                                                        </td>
+                                                                        <td id="master-value-fortitude"><i
+                                                                                class="bi bi-square"></i>
+                                                                        </td>
+                                                                        <td id="legendary-value-fortitude"><i
+                                                                                class="bi bi-square"></i></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </div>
-                                            <div class="vr ms-2 me-2"></div>
-                                            <div>
-                                                <table id="reflex-table" class="table table-sm table-hover">
-                                                    <thead>
-                                                        <tr>
-                                                            <th scope="col">
-                                                                <h6 id="reflex-text-title" class="fw-bold">Reflex</h6>
-                                                            </th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td scope="col">
-                                                                <h5 id="reflex-text-value" class="fw-bold">+5</h5>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                                <table class="table table-sm table-hover">
-                                                    <thead>
-                                                        <tr>
-                                                            <th id="trained-title-reflex" scope="col">Tr.</th>
-                                                            <th id="expert-title-reflex" scope="col">Ex.</th>
-                                                            <th id="master-title-reflex" scope="col">Ma.</th>
-                                                            <th id="legendary-title-reflex" scope="col">Le.</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td id="trained-value-reflex"><i class="bi bi-square"></i>
-                                                            </td>
-                                                            <td id="expert-value-reflex"><i class="bi bi-square"></i>
-                                                            </td>
-                                                            <td id="master-value-reflex"><i
-                                                                    class="bi bi-check-square-fill"></i></td>
-                                                            <td id="legendary-value-reflex"><i class="bi bi-square"></i>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
+
+                                            <div class="col-md-auto mb-2">
+                                                <div id="reflex-card" class="card">
+                                                    <div id="reflex-card-title" class="card-header text-center fw-bold">
+                                                        Reflex
+                                                    </div>
+                                                    <ul class="list-group list-group-flush">
+                                                        <li class="list-group-item text-center">
+                                                            <h5 id="reflex-text-value" class="fw-bold">+5</h5>
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <table class="table table-sm table-hover">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th id="trained-title-reflex" scope="col">Tr.
+                                                                        </th>
+                                                                        <th id="expert-title-reflex" scope="col">Ex.
+                                                                        </th>
+                                                                        <th id="master-title-reflex" scope="col">Ma.
+                                                                        </th>
+                                                                        <th id="legendary-title-reflex" scope="col">Le.
+                                                                        </th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td id="trained-value-reflex"><i
+                                                                                class="bi bi-check-square-fill"></i>
+                                                                        </td>
+                                                                        <td id="expert-value-reflex"><i
+                                                                                class="bi bi-square"></i>
+                                                                        </td>
+                                                                        <td id="master-value-reflex"><i
+                                                                                class="bi bi-square"></i>
+                                                                        </td>
+                                                                        <td id="legendary-value-reflex"><i
+                                                                                class="bi bi-square"></i>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </div>
-                                            <div class="vr ms-2 me-2"></div>
-                                            <div>
-                                                <table id="will-table" class="table table-sm table-hover">
-                                                    <thead>
-                                                        <tr>
-                                                            <th scope="col">
-                                                                <h6 id="will-text-title" class="fw-bold">Will</h6>
-                                                            </th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td scope="col">
-                                                                <h5 id="will-text-value" class="fw-bold">+5</h5>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                                <table class="table table-sm table-hover">
-                                                    <thead>
-                                                        <tr>
-                                                            <th id="trained-title-will" scope="col">Tr.</th>
-                                                            <th id="expert-title-will" scope="col">Ex.</th>
-                                                            <th id="master-title-will" scope="col">Ma.</th>
-                                                            <th id="legendary-title-will" scope="col">Le.</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td id="trained-value-will"><i class="bi bi-square"></i>
-                                                            </td>
-                                                            <td id="expert-value-will"><i
-                                                                    class="bi bi-check-square-fill"></i></td>
-                                                            <td id="master-value-will"><i class="bi bi-square"></i></td>
-                                                            <td id="legendary-value-will"><i class="bi bi-square"></i>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
+
+                                            <div class="col-md-auto mb-2">
+                                                <div id="will-card" class="card">
+                                                    <div id="will-card-title" class="card-header text-center fw-bold">
+                                                        Will
+                                                    </div>
+                                                    <ul class="list-group list-group-flush">
+                                                        <li class="list-group-item text-center">
+                                                            <h5 id="will-text-value" class="fw-bold">+8</h5>
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <table class="table table-sm table-hover">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th id="trained-title-will" scope="col">Tr.</th>
+                                                                        <th id="expert-title-will" scope="col">Ex.</th>
+                                                                        <th id="master-title-will" scope="col">Ma.</th>
+                                                                        <th id="legendary-title-will" scope="col">Le.
+                                                                        </th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td id="trained-value-will"><i
+                                                                                class="bi bi-square"></i>
+                                                                        </td>
+                                                                        <td id="expert-value-will"><i
+                                                                                class="bi bi-check-square-fill"></i>
+                                                                        </td>
+                                                                        <td id="master-value-will"><i
+                                                                                class="bi bi-square"></i></td>
+                                                                        <td id="legendary-value-will"><i
+                                                                                class="bi bi-square"></i>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </div>
+
                                         </div>
                                     </div>
 
-                                    <div class="col">
-                                        <h6 class="fw-bold">Perception</h6>
-                                        <div class="hstack col-12 text-center">
-                                            <div>
-                                                <table id="perception-table" class="table table-sm table-hover">
-                                                    <thead>
-                                                        <tr>
-                                                            <th scope="col">
-                                                                <h6 id="perception-text-title" class="fw-bold">
-                                                                    Perception</h6>
-                                                            </th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td scope="col">
-                                                                <h5 id="perception-text-value" class="fw-bold">+5</h5>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                                <table class="table table-sm table-hover">
-                                                    <thead>
-                                                        <tr>
-                                                            <th id="trained-title-perception" scope="col">Tr.</th>
-                                                            <th id="expert-title-perception" scope="col">Ex.</th>
-                                                            <th id="master-title-perception" scope="col">Ma.</th>
-                                                            <th id="legendary-title-perception" scope="col">Le.</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td id="trained-value-perception"><i
-                                                                    class="bi bi-check-square-fill"></i></td>
-                                                            <td id="expert-value-perception"><i
-                                                                    class="bi bi-square"></i></td>
-                                                            <td id="master-value-perception"><i
-                                                                    class="bi bi-square"></i></td>
-                                                            <td id="legendary-value-perception"><i
-                                                                    class="bi bi-square"></i></td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </li>
                             <li id="abilities" class="list-group-item">
@@ -386,7 +350,7 @@
                                                                     <td scope="col">
                                                                         <h5 id="dexterity-modifier-text-value"
                                                                             class="fw-bold">
-                                                                            +0</h5>
+                                                                            +1</h5>
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -409,7 +373,7 @@
                                                                     <td scope="col">
                                                                         <h5 id="dexterity-total-text-value"
                                                                             class="fw-bold">
-                                                                            10</h5>
+                                                                            12</h5>
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -443,7 +407,7 @@
                                                                     <td scope="col">
                                                                         <h5 id="constitution-modifier-text-value"
                                                                             class="fw-bold">
-                                                                            +0</h5>
+                                                                            +1</h5>
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -466,7 +430,7 @@
                                                                     <td scope="col">
                                                                         <h5 id="constitution-total-text-value"
                                                                             class="fw-bold">
-                                                                            10</h5>
+                                                                            12</h5>
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -500,7 +464,7 @@
                                                                     <td scope="col">
                                                                         <h5 id="intelligence-modifier-text-value"
                                                                             class="fw-bold">
-                                                                            +0</h5>
+                                                                            +4</h5>
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -523,7 +487,7 @@
                                                                     <td scope="col">
                                                                         <h5 id="intelligence-total-text-value"
                                                                             class="fw-bold">
-                                                                            10</h5>
+                                                                            19</h5>
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -557,7 +521,7 @@
                                                                     <td scope="col">
                                                                         <h5 id="wisdom-modifier-text-value"
                                                                             class="fw-bold">
-                                                                            +0</h5>
+                                                                            +2</h5>
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -580,7 +544,7 @@
                                                                     <td scope="col">
                                                                         <h5 id="wisdom-total-text-value"
                                                                             class="fw-bold">
-                                                                            10</h5>
+                                                                            14</h5>
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
