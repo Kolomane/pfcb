@@ -2379,10 +2379,10 @@
 
                                                             <div class="input-group input-group-sm mb-0">
                                                                 <button class="btn btn-sm btn-outline-danger"
-                                                                    type="button" id="button-addon1"><i
+                                                                    type="button" id="hp-damage"><i
                                                                         class="bi bi-heartbreak"></i></button>
-                                                                <div class="progress w-75"
-                                                                    style="height: 32px; border-color: black; border-radius: 4px;"
+                                                                <div class="progress"
+                                                                    style="height: 32px; border-color: black; border-radius: 4px; min-width: 203px;"
                                                                     role="progressbar" aria-label="Danger example"
                                                                     aria-valuenow="100" aria-valuemin="0"
                                                                     aria-valuemax="100" type="button"
@@ -2393,8 +2393,11 @@
                                                                         style="width: 100%"></div>
                                                                 </div>
                                                                 <button class="btn btn-sm btn-outline-success"
-                                                                    type="button" id="button-addon1"><i
+                                                                    type="button" id="hp-heal"><i
                                                                         class="bi bi-hearts"></i></button>
+                                                                <button class="btn btn-sm btn-outline-info"
+                                                                    type="button" id="hp-temp"><i
+                                                                        class="bi bi-clock-history"></i></button>
                                                             </div>
                                                             <div id="hp-modifiers" class="collapse">
                                                                 <div class="input-group input-group-sm mb-0 mt-0">
@@ -2425,17 +2428,24 @@
                                                                     <input type="text" class="form-control"
                                                                         style="max-width: 85px;" placeholder=""
                                                                         aria-label="Example text with button addon"
-                                                                        aria-describedby="button-addon1">
+                                                                        aria-describedby="button-addon1"
+                                                                        onfocus="$('#hp-modifier-custom').prop('checked', true);">
                                                                 </div>
                                                             </div>
                                                             <div class="input-group input-group-sm mb-0 mt-0">
                                                                 <button class="btn btn-sm btn-outline-secondary w-50"
                                                                     style="border-color:#D6D6D6; color:#D6D6D6; background-color:#333333;"
-                                                                    type="button" onmouseover="this.style='border-color:black; color:black; background-color:#F0F8FF'" onmouseout="this.style='border-color:#D6D6D6; color:#D6D6D6; background-color:#333333;'"><i class="bi bi-moon-stars-fill"></i>
+                                                                    type="button"
+                                                                    onmouseover="this.style='border-color:black; color:black; background-color:#F0F8FF'"
+                                                                    onmouseout="this.style='border-color:#D6D6D6; color:#D6D6D6; background-color:#333333;'"><i
+                                                                        class="bi bi-moon-stars-fill"></i>
                                                                     Rest</button>
                                                                 <button class="btn btn-sm btn-outline-secondary w-50"
-                                                                style="border-color:#FFA500; color:#FFA500; background-color:#FFFCE6;"
-                                                                type="button" onmouseover="this.style='border-color:#FFFCF0; color:#FFFCF0; background-color:#222222'" onmouseout="this.style='border-color:#FFA500; color:#FFA500; background-color:#FFFCE6;'"><i class="bi bi-sunrise"></i> Long-Rest</button>
+                                                                    style="border-color:#FFA500; color:#FFA500; background-color:#FFFCE6;"
+                                                                    type="button"
+                                                                    onmouseover="this.style='border-color:#FFFCF0; color:#FFFCF0; background-color:#222222'"
+                                                                    onmouseout="this.style='border-color:#FFA500; color:#FFA500; background-color:#FFFCE6;'"><i
+                                                                        class="bi bi-sunrise"></i> Long-Rest</button>
                                                             </div>
 
 
