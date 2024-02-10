@@ -2453,6 +2453,103 @@
                                                     </div>
                                                 </div>
                                             </div>
+
+                                            <div class="col-md-auto mb-2">
+                                                <div id="ac-hp-card" class="card">
+                                                    <div id="ac-hp-card-title" class="card-header fw-bold" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#ac-hp-details"
+                                                        aria-expanded="false" aria-controls="ac-hp-details">
+                                                        Shield (<code>22/22</code>) & Armor
+                                                    </div>
+                                                    <div id="ac-hp-details" class="collapse show">
+                                                        <div class="card-body">
+                                                            <div class="hstack">
+                                                                <h5 class="card-title">Shield</h5>
+                                                                <div class="vr ms-2 me-2"></div>
+                                                                <div>
+                                                                    <h5 class="text-danger">4<small
+                                                                            class="text-secondary"> hardness</small></h5>
+                                                                    <hr class="mb-0 mt-0" />
+                                                                    <h6 class="text-danger">+2<small
+                                                                            class="text-secondary"> AC when raised</small></h6>
+                                                                </div>
+                                                            </div>
+                                                            <hr />
+                                                            <div class="hstack">
+                                                                <h5 class="card-title">Hit Points</h5>
+                                                                <div class="vr ms-2 me-2"></div>
+                                                                <div>
+                                                                    <h5 class="text-danger">20<small
+                                                                            class="text-secondary"> of 20</small></h5>
+                                                                    <hr class="mb-0 mt-0" />
+                                                                    <h5 class="text-primary">0<small
+                                                                            class="text-secondary"> temporary</small>
+                                                                    </h5>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="input-group input-group-sm mb-0">
+                                                                <button class="btn btn-sm btn-outline-danger"
+                                                                    type="button" id="hp-damage"><i
+                                                                        class="bi bi-heartbreak"></i></button>
+                                                                <div class="progress"
+                                                                    style="height: 32px; border-color: black; border-radius: 4px; min-width: 203px;"
+                                                                    role="progressbar" aria-label="Danger example"
+                                                                    aria-valuenow="100" aria-valuemin="0"
+                                                                    aria-valuemax="100" type="button"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#hp-modifiers" aria-expanded="false"
+                                                                    aria-controls="hp-modifiers">
+                                                                    <div class="progress-bar bg-danger"
+                                                                        style="width: 100%"></div>
+                                                                </div>
+                                                                <button class="btn btn-sm btn-outline-success"
+                                                                    type="button" id="hp-heal"><i
+                                                                        class="bi bi-hearts"></i></button>
+                                                                <button class="btn btn-sm btn-outline-info"
+                                                                    type="button" id="hp-temp"><i
+                                                                        class="bi bi-clock-history"></i></button>
+                                                            </div>
+                                                            <div id="hp-modifiers" class="collapse">
+                                                                <div class="input-group input-group-sm mb-0 mt-0">
+                                                                    <input type="radio" class="btn-check" name="options"
+                                                                        id="hp-modifier-1" autocomplete="off" checked>
+                                                                    <label class="btn btn-sm btn-outline-secondary"
+                                                                        for="hp-modifier-1">1</label>
+                                                                    <input type="radio" class="btn-check btn-sm"
+                                                                        name="options" id="hp-modifier-5"
+                                                                        autocomplete="off">
+                                                                    <label class="btn btn-sm btn-outline-secondary"
+                                                                        for="hp-modifier-5">5</label>
+                                                                    <input type="radio" class="btn-check btn-sm"
+                                                                        name="options" id="hp-modifier-10"
+                                                                        autocomplete="off">
+                                                                    <label class="btn btn-sm btn-outline-secondary"
+                                                                        for="hp-modifier-10">10</label>
+                                                                    <input type="radio" class="btn-check btn-sm"
+                                                                        name="options" id="hp-modifier-25"
+                                                                        autocomplete="off">
+                                                                    <label class="btn btn-sm btn-outline-secondary"
+                                                                        for="hp-modifier-25">25</label>
+                                                                    <input type="radio" class="btn-check btn-sm"
+                                                                        name="options" id="hp-modifier-custom"
+                                                                        autocomplete="off">
+                                                                    <label class="btn btn-sm btn-outline-secondary"
+                                                                        for="hp-modifier-custom">Custom:</label>
+                                                                    <input type="text" class="form-control"
+                                                                        style="max-width: 85px;" placeholder=""
+                                                                        aria-label="Example text with button addon"
+                                                                        aria-describedby="button-addon1"
+                                                                        onfocus="$('#hp-modifier-custom').prop('checked', true);">
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
