@@ -3517,49 +3517,59 @@
         id="action-tracker-panel" aria-labelledby="action-tracker-panel-label">
         <div class="offcanvas-header" style="max-height: 35px;">
             <h5 class="offcanvas-title" id="action-tracker-panel-label">Action Tracker</h5>
-            <button type="button" class="btn btn-sm btn-outline-secondary ms-auto"><i class="bi bi-arrow-counterclockwise"></i></button>
+            <button id="action-tracker-reset" type="button" class="btn btn-sm btn-outline-secondary ms-auto"><i
+                    class="bi bi-arrow-counterclockwise"></i></button>
             <button type="button" class="btn-close btn-sm" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body mt-0">
             <div class="hstack">
                 <div class="w-25 d-grid text-center">
-                    <h6 class="fw-bold">First Action</h6>
-                    <input type="radio" class="btn-check" name="1-action" id="1-action-move" autocomplete="off">
-                    <label class="btn btn-outline-primary mb-1" for="1-action-move">Move</label>
-                    <input type="radio" class="btn-check" name="1-action" id="1-action-attack" autocomplete="off">
-                    <label class="btn btn-outline-danger mb-1" for="1-action-attack">Attack</label>
-                    <input type="radio" class="btn-check" name="1-action" id="1-action-cast" autocomplete="off">
-                    <label class="btn btn-outline-info mb-1" for="1-action-cast">Cast</label>
+                    <h6><span class="fw-bold">First Action</span>&nbsp;<span id="1-map"></span></h6>
+                    <div class="btn-group-vertical" role="group" aria-label="Vertical radio toggle button group">
+                        <input type="radio" class="btn-check" name="1-action" id="1-action-move" autocomplete="off">
+                        <label class="btn btn-outline-primary mb-1" for="1-action-move">Move</label>
+                        <input type="radio" class="btn-check" name="1-action" id="1-action-attack" autocomplete="off">
+                        <label class="btn btn-outline-danger mb-1" for="1-action-attack">Attack</label>
+                        <input type="radio" class="btn-check" name="1-action" id="1-action-cast" autocomplete="off">
+                        <label class="btn btn-outline-info mb-1" for="1-action-cast">Cast</label>
+                    </div>
                 </div>
                 <div class="vr ms-2 me-2"></div>
                 <div class="w-25 d-grid text-center">
-                    <h6 class="fw-bold">Second Action</h6>
-                    <input type="radio" class="btn-check" name="2-action" id="2-action-move" autocomplete="off">
-                    <label class="btn btn-outline-primary mb-1" for="2-action-move">Move</label>
-                    <input type="radio" class="btn-check" name="2-action" id="2-action-attack" autocomplete="off">
-                    <label class="btn btn-outline-danger mb-1" for="2-action-attack">Attack</label>
-                    <input type="radio" class="btn-check" name="2-action" id="2-action-cast" autocomplete="off">
-                    <label class="btn btn-outline-info mb-1" for="2-action-cast">Cast</label>
+                    <h6><span class="fw-bold">Second Action</span>&nbsp;<span id="2-map"></span></h6>
+                    <div class="btn-group-vertical" role="group" aria-label="Vertical radio toggle button group">
+                        <input type="radio" class="btn-check" name="2-action" id="2-action-move" autocomplete="off">
+                        <label class="btn btn-outline-primary mb-1" for="2-action-move">Move</label>
+                        <input type="radio" class="btn-check" name="2-action" id="2-action-attack" autocomplete="off">
+                        <label class="btn btn-outline-danger mb-1" for="2-action-attack">Attack</label>
+                        <input type="radio" class="btn-check" name="2-action" id="2-action-cast" autocomplete="off">
+                        <label class="btn btn-outline-info mb-1" for="2-action-cast">Cast</label>
+                    </div>
                 </div>
                 <div class="vr ms-2 me-2"></div>
                 <div class="w-25 d-grid text-center">
-                    <h6 class="fw-bold">Third Action</h6>
-                    <input type="radio" class="btn-check" name="3-action" id="3-action-move" autocomplete="off">
-                    <label class="btn btn-outline-primary mb-1" for="3-action-move">Move</label>
-                    <input type="radio" class="btn-check" name="3-action" id="3-action-attack" autocomplete="off">
-                    <label class="btn btn-outline-danger mb-1" for="3-action-attack">Attack</label>
-                    <input type="radio" class="btn-check" name="3-action" id="3-action-cast" autocomplete="off">
-                    <label class="btn btn-outline-info mb-1" for="3-action-cast">Cast</label>
+                    <h6><span class="fw-bold">Third Action</span>&nbsp;<span id="3-map"></span></h6>
+                    <div class="btn-group-vertical" role="group" aria-label="Vertical radio toggle button group">
+                        <input type="radio" class="btn-check" name="3-action" id="3-action-move" autocomplete="off">
+                        <label class="btn btn-outline-primary mb-1" for="3-action-move">Move</label>
+                        <input type="radio" class="btn-check" name="3-action" id="3-action-attack" autocomplete="off">
+                        <label class="btn btn-outline-danger mb-1" for="3-action-attack">Attack</label>
+                        <input type="radio" class="btn-check" name="3-action" id="3-action-cast" autocomplete="off">
+                        <label class="btn btn-outline-info mb-1" for="3-action-cast">Cast</label>
+                    </div>
                 </div>
                 <div class="vr ms-2 me-2"></div>
                 <div class="w-25 d-grid text-center">
-                    <h6 class="fw-bold">Fourth Action (Haste)</h6>
-                    <input type="radio" class="btn-check" name="4-action" id="4-action-move" autocomplete="off">
-                    <label class="btn btn-outline-primary mb-1" for="4-action-move">Move</label>
-                    <input type="radio" class="btn-check" name="4-action" id="4-action-attack" autocomplete="off">
-                    <label class="btn btn-outline-danger mb-1" for="4-action-attack">Attack</label>
-                    <input type="radio" class="btn-check" name="4-action" id="4-action-cast" autocomplete="off">
-                    <label class="btn btn-outline-info mb-1" for="4-action-cast">Cast</label>
+                    <h6><span class="fw-bold">Fourth Action (Haste)</span>&nbsp;<span id="4-map"></span>&nbsp;&nbsp;<button id="haste-unlock" type="button" class="btn btn-sm btn-outline-secondary"><i
+                        class="bi bi-unlock-fill"></i></button></h6>
+                    <div class="btn-group-vertical" role="group" aria-label="Vertical radio toggle button group">
+                        <input type="radio" class="btn-check" name="4-action" id="4-action-move" autocomplete="off" disabled>
+                        <label class="btn btn-outline-primary mb-1" for="4-action-move">Move</label>
+                        <input type="radio" class="btn-check" name="4-action" id="4-action-attack" autocomplete="off" disabled>
+                        <label class="btn btn-outline-danger mb-1" for="4-action-attack">Attack</label>
+                        <input type="radio" class="btn-check" name="4-action" id="4-action-cast" autocomplete="off" disabled>
+                        <label class="btn btn-outline-info mb-1" for="4-action-cast">Cast</label>
+                    </div>
                 </div>
             </div>
         </div>
@@ -3812,6 +3822,55 @@
         $('#defend-collapse-toggle').on('click', function () {
             let theValue = $('#defend-collapse-toggle').is(':checked')
             collapseEverything('defend')
+        })
+
+        // Reset Action Tracker
+        $('#action-tracker-reset').on('click', function() {
+            $('[id*=-action-]').prop('checked', false)
+            $('[id$=-map]').html('')
+        })
+
+        // Unlock or Lock HASTE tracker
+        $('#haste-unlock').on('click', function() {
+            let currentlyDisabled = $('[id^=4-action-]').prop('disabled')
+            if (currentlyDisabled) {
+                $('#haste-unlock').html(`<i class="bi bi-lock-fill"></i>`)
+                $('[id^=4-action-]').prop('disabled', false)
+            }
+            else {
+                $('#haste-unlock').html(`<i class="bi bi-unlock-fill"></i>`)
+                $('[id^=4-action-]').prop('disabled', true)
+                $('[id^=4-action-]').prop('checked', false)
+            }
+        })
+
+        // Multiple Attack Penalty (MAP) Tracker
+        $('[id$=-action-attack]').on('click', function() {
+            let attackCount = $('[id$=-action-attack]:checked').length
+            let firstGroup = $('[id^=1-action-]:checked').val()
+            let secondGroup = $('[id^=2-action-]:checked').val()
+            let thirdGroup = $('[id^=3-action-]:checked').val()
+            let hasteCheck = $('[id^=4-action-]').prop('disabled')
+            let multipleAttackPenalty = 0
+            console.log(`attackCount = ${attackCount}\nfirstGroup = ${firstGroup}\nsecondGroup = ${secondGroup}\nthirdGroup = ${thirdGroup}\nhasteCheck = ${hasteCheck}`)
+            if (attackCount == 1) {
+                multipleAttackPenalty = -5
+            }
+            if (attackCount > 1) {
+                multipleAttackPenalty = -10
+            }
+            console.log(`multipleAttackPenalty = ${multipleAttackPenalty}`)
+
+            if ((firstGroup == 'on') && !(secondGroup == 'on') && !(thirdGroup == 'on')) {
+                //  && !secondGroup && !thirdGroup
+                $('#2-map').html(`<small class="text-secondary">[MAP <code>${multipleAttackPenalty}</code>]</small>`)
+            }
+            else if ((secondGroup == 'on') && !(thirdGroup == 'on')) {
+                $('#3-map').html(`<small class="text-secondary">[MAP <code>${multipleAttackPenalty}</code>]</small>`)
+            }
+            else if ((thirdGroup == 'on') && !hasteCheck) {
+                $('#4-map').html(`<small class="text-secondary">[MAP <code>${multipleAttackPenalty}</code>]</small>`)
+            }
         })
     </script>
 </body>
