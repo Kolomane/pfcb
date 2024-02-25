@@ -3513,13 +3513,55 @@
     <!-- Character Info // END -->
 
     <!-- Action Tracker // START -->
-    <div class="offcanvas offcanvas-bottom" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="action-tracker-panel" aria-labelledby="action-tracker-panel-label">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="action-tracker-panel-label">Offcanvas bottom</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <div class="offcanvas offcanvas-bottom" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+        id="action-tracker-panel" aria-labelledby="action-tracker-panel-label">
+        <div class="offcanvas-header" style="max-height: 35px;">
+            <h5 class="offcanvas-title" id="action-tracker-panel-label">Action Tracker</h5>
+            <button type="button" class="btn btn-sm btn-outline-secondary ms-auto"><i class="bi bi-arrow-counterclockwise"></i></button>
+            <button type="button" class="btn-close btn-sm" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body small">
-            ...
+        <div class="offcanvas-body mt-0">
+            <div class="hstack">
+                <div class="w-25 d-grid text-center">
+                    <h6 class="fw-bold">First Action</h6>
+                    <input type="radio" class="btn-check" name="1-action" id="1-action-move" autocomplete="off">
+                    <label class="btn btn-outline-primary mb-1" for="1-action-move">Move</label>
+                    <input type="radio" class="btn-check" name="1-action" id="1-action-attack" autocomplete="off">
+                    <label class="btn btn-outline-danger mb-1" for="1-action-attack">Attack</label>
+                    <input type="radio" class="btn-check" name="1-action" id="1-action-cast" autocomplete="off">
+                    <label class="btn btn-outline-info mb-1" for="1-action-cast">Cast</label>
+                </div>
+                <div class="vr ms-2 me-2"></div>
+                <div class="w-25 d-grid text-center">
+                    <h6 class="fw-bold">Second Action</h6>
+                    <input type="radio" class="btn-check" name="2-action" id="2-action-move" autocomplete="off">
+                    <label class="btn btn-outline-primary mb-1" for="2-action-move">Move</label>
+                    <input type="radio" class="btn-check" name="2-action" id="2-action-attack" autocomplete="off">
+                    <label class="btn btn-outline-danger mb-1" for="2-action-attack">Attack</label>
+                    <input type="radio" class="btn-check" name="2-action" id="2-action-cast" autocomplete="off">
+                    <label class="btn btn-outline-info mb-1" for="2-action-cast">Cast</label>
+                </div>
+                <div class="vr ms-2 me-2"></div>
+                <div class="w-25 d-grid text-center">
+                    <h6 class="fw-bold">Third Action</h6>
+                    <input type="radio" class="btn-check" name="3-action" id="3-action-move" autocomplete="off">
+                    <label class="btn btn-outline-primary mb-1" for="3-action-move">Move</label>
+                    <input type="radio" class="btn-check" name="3-action" id="3-action-attack" autocomplete="off">
+                    <label class="btn btn-outline-danger mb-1" for="3-action-attack">Attack</label>
+                    <input type="radio" class="btn-check" name="3-action" id="3-action-cast" autocomplete="off">
+                    <label class="btn btn-outline-info mb-1" for="3-action-cast">Cast</label>
+                </div>
+                <div class="vr ms-2 me-2"></div>
+                <div class="w-25 d-grid text-center">
+                    <h6 class="fw-bold">Fourth Action (Haste)</h6>
+                    <input type="radio" class="btn-check" name="4-action" id="4-action-move" autocomplete="off">
+                    <label class="btn btn-outline-primary mb-1" for="4-action-move">Move</label>
+                    <input type="radio" class="btn-check" name="4-action" id="4-action-attack" autocomplete="off">
+                    <label class="btn btn-outline-danger mb-1" for="4-action-attack">Attack</label>
+                    <input type="radio" class="btn-check" name="4-action" id="4-action-cast" autocomplete="off">
+                    <label class="btn btn-outline-info mb-1" for="4-action-cast">Cast</label>
+                </div>
+            </div>
         </div>
     </div>
     <!-- Action Tracker // END -->
