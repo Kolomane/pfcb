@@ -23,6 +23,10 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                     <li class="nav-item">
+                        <a class="nav-link" href="#character">Character</a>
+                    </li>
+
+                    <li class="nav-item">
                         <div class="btn-group">
                             <a href="#rolls" type="button" class="nav-link btn btn-sm">Rolls</a>
                             <button type="button" class="nav-link btn btn-sm dropdown-toggle dropdown-toggle-split"
@@ -96,9 +100,12 @@
                 <div class="d-flex" role="search">
                     <input class="form-control form-control-sm" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-sm btn-outline-success me-2" type="submit">Search</button>
-                    <button class="btn btn-sm btn-outline-primary me-2" type="button" data-bs-toggle="offcanvas"
+                    <!-- <button class="btn btn-sm btn-outline-primary me-2" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#character-info-panel" aria-controls="character-info-panel"><i
-                            class="bi bi-file-earmark-person"></i></button>
+                            class="bi bi-file-earmark-person"></i></button> -->
+                    <button class="btn btn-sm btn-outline-danger me-2" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#action-tracker-panel" aria-controls="character-info-panel"><i
+                            class="bi bi-diagram-3-fill"></i></button>
                     <button class="btn btn-sm btn-outline-secondary" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#page-settings-panel" aria-controls="page-settings-panel"><i
                             class="bi bi-gear-fill"></i></button>
@@ -117,6 +124,211 @@
                 <!-- data-bs-spy="scroll" data-bs-target="#play-area" data-bs-smooth-scroll="true"
                     class="scrollspy-example" tabindex="0" -->
                 <div>
+
+                    <div class="card mb-3">
+                        <div id="character" class="card-header">
+                            <h5 class="fw-bold">Character</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg">
+                                    <div class="card">
+                                        <div class="card-header hstack">
+                                            <h6>
+                                                <bold>Character</bold>
+                                            </h6>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary ms-auto"><i
+                                                    class="bi bi-lock-fill"></i></button>
+                                        </div>
+                                        <div id="character-image" class="text-center" style="height: 24rem;">
+                                            <h1>
+                                                <i class="bi bi-person-fill"></i>
+                                            </h1>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+
+                                            <!-- Basic Character Info List Group Item -->
+                                            <li class="list-group-item">
+                                                <!-- Character Name -->
+                                                <div class="form-floating mb-1">
+                                                    <input type="text" class="form-control" id="character-info-name"
+                                                        placeholder="">
+                                                    <label for="character-info-name">Name</label>
+                                                </div>
+                                                <div class="hstack">
+                                                    <!-- Character Level -->
+                                                    <div class="form-floating mb-1 col-6">
+                                                        <input type="number" class="form-control"
+                                                            id="character-info-level" placeholder="">
+                                                        <label for="character-info-level">Level</label>
+                                                    </div>
+                                                    <!-- Character XP -->
+                                                    <div class="form-floating mb-1 col-6">
+                                                        <input type="number" class="form-control" id="character-info-xp"
+                                                            placeholder="">
+                                                        <label for="character-info-xp">XP</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <!-- END OF Basic Character Info List Group Item -->
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm">
+                                    <div class="card">
+                                        <div class="card-header hstack">
+                                            <h6>
+                                                <bold>Physical Attributes</bold>
+                                            </h6>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary ms-auto"><i
+                                                    class="bi bi-lock-fill"></i></button>
+                                        </div>
+                                        <div class="card-body">
+                                            <!-- Heritage -->
+                                            <div class="input-group mb-2">
+                                                <div class="form-floating">
+                                                    <select class="form-select" id="physical-attr-heritage"
+                                                        aria-label="Floating label select example">
+                                                        <option selected></option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                    <label for="physical-attr-heritage">Heritage</label>
+                                                </div>
+                                                <button class="btn btn-outline-secondary" type="button"><i
+                                                        class="bi bi-book"></i></button>
+                                            </div>
+
+                                            <!-- Gender -->
+                                            <div class="form-floating mb-1">
+                                                <select class="form-select" id="physical-attr-gender"
+                                                    aria-label="Floating label select example">
+                                                    <option selected></option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                                <label for="physical-attr-gender">Gender</label>
+                                            </div>
+
+                                            <!-- Age -->
+                                            <div class="form-floating mb-1">
+                                                <input type="number" class="form-control" id="character-info-level"
+                                                    placeholder="">
+                                                <label for="character-info-level">Age</label>
+                                            </div>
+
+                                            <!-- Size -->
+                                            <div class="input-group mb-1">
+                                                <div class="form-floating">
+                                                    <select class="form-select" id="physical-attr-size"
+                                                        aria-label="Floating label select example">
+                                                        <option selected></option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                    <label for="physical-attr-size">Size</label>
+                                                </div>
+                                                <button class="btn btn-outline-secondary" type="button"><i
+                                                        class="bi bi-book"></i></button>
+                                            </div>
+
+                                            <!-- Speed -->
+                                            <div class="input-group mb-1">
+                                                <div class="form-floating">
+                                                    <input type="number" class="form-control" id="character-info-speed"
+                                                        placeholder="">
+                                                    <label for="character-info-speed">Speed</label>
+                                                </div>
+                                                <button class="btn btn-outline-secondary" type="button"><i
+                                                        class="bi bi-book"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm">
+                                    <div class="card">
+                                        <div class="card-header hstack">
+                                            <h6>
+                                                <bold>MetaPhysical Attributes</bold>
+                                            </h6>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary ms-auto"><i
+                                                    class="bi bi-lock-fill"></i></button>
+                                        </div>
+                                        <div class="card-body">
+                                            <!-- Background -->
+                                            <div class="input-group mb-1">
+                                                <div class="form-floating">
+                                                    <select class="form-select" id="metaphysical-attr-background"
+                                                        aria-label="Floating label select example">
+                                                        <option selected></option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                    <label for="metaphysical-attr-background">Background</label>
+                                                </div>
+                                                <button class="btn btn-outline-secondary" type="button"><i
+                                                        class="bi bi-book"></i></button>
+                                            </div>
+
+                                            <!-- Deity -->
+                                            <div class="input-group mb-1">
+                                                <div class="form-floating">
+                                                    <select class="form-select" id="metaphysical-attr-deity"
+                                                        aria-label="Floating label select example">
+                                                        <option selected></option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                    <label for="metaphysical-attr-deity">Deity</label>
+                                                </div>
+                                                <button class="btn btn-outline-secondary" type="button"><i
+                                                        class="bi bi-book"></i></button>
+                                            </div>
+
+                                            <!-- Alignment -->
+                                            <div class="input-group mb-1">
+                                                <div class="form-floating">
+                                                    <select class="form-select" id="metaphysical-attr-alignment"
+                                                        aria-label="Floating label select example">
+                                                        <option selected></option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                    <label for="metaphysical-attr-alignment">Alignment</label>
+                                                </div>
+                                                <button class="btn btn-outline-secondary" type="button"><i
+                                                        class="bi bi-book"></i></button>
+                                            </div>
+
+                                            <!-- Languages -->
+                                            <div class="d-grid">
+                                                <button type="button"
+                                                    class="btn btn-outline-secondary">Languages</button>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <span class="badge rounded-pill text-bg-secondary">Common</span>
+                                                    <span class="badge rounded-pill text-bg-warning">Aklo</span>
+                                                    <span class="badge rounded-pill text-bg-secondary">Draconic</span>
+                                                    <span class="badge rounded-pill text-bg-secondary">Gnomish</span>
+                                                    <span class="badge rounded-pill text-bg-danger">Strix</span>
+                                                    <span class="badge rounded-pill text-bg-dark">Druidic</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <!-- Rolls // START -->
                     <div class="card mb-3">
@@ -2468,10 +2680,12 @@
                                                                 <div class="vr ms-2 me-2"></div>
                                                                 <div>
                                                                     <h5 class="text-danger">4<small
-                                                                            class="text-secondary"> hardness</small></h5>
+                                                                            class="text-secondary"> hardness</small>
+                                                                    </h5>
                                                                     <hr class="mb-0 mt-0" />
                                                                     <h6 class="text-danger">+2<small
-                                                                            class="text-secondary"> AC when raised</small></h6>
+                                                                            class="text-secondary"> AC when
+                                                                            raised</small></h6>
                                                                 </div>
                                                             </div>
                                                             <hr />
@@ -2491,7 +2705,7 @@
                                                             <div class="input-group input-group-sm mb-0">
                                                                 <button class="btn btn-sm btn-outline-danger"
                                                                     type="button" id="hp-damage"><i
-                                                                        class="bi bi-heartbreak"></i></button>
+                                                                        class="bi bi-shield-minus"></i></button>
                                                                 <div class="progress"
                                                                     style="height: 32px; border-color: black; border-radius: 4px; min-width: 203px;"
                                                                     role="progressbar" aria-label="Danger example"
@@ -2505,7 +2719,7 @@
                                                                 </div>
                                                                 <button class="btn btn-sm btn-outline-success"
                                                                     type="button" id="hp-heal"><i
-                                                                        class="bi bi-hearts"></i></button>
+                                                                        class="bi bi-shield-plus"></i></button>
                                                                 <button class="btn btn-sm btn-outline-info"
                                                                     type="button" id="hp-temp"><i
                                                                         class="bi bi-clock-history"></i></button>
@@ -2553,12 +2767,500 @@
                                         </div>
                                     </div>
                                 </div>
-
-
                             </li>
-                            <li id="passives" class="list-group-item">Passives</li>
-                            <li id="attack" class="list-group-item">Attack</li>
-                            <li id="actions" class="list-group-item">Actions</li>
+                            <li id="passives" class="list-group-item">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="hstack mb-2">
+                                            <h6 class="fw-bold">Passives</h6>
+                                            <div class="form-check form-switch ms-2">
+                                                <input class="form-check-input" type="checkbox" role="switch"
+                                                    id="passives-collapse-toggle" checked>
+                                            </div>
+                                            <div class="vr ms-2 me-3"></div>
+                                            <button type="button" class="btn btn-sm btn-outline-primary"><i
+                                                    class="bi bi-plus-lg"></i></button>
+                                        </div>
+                                        <div class="row row-cols-1">
+
+                                            <div class="col-md-auto mb-2">
+                                                <div id="passive-card" class="card">
+                                                    <div id="passive-card-title" class="card-header fw-bold"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#passive-details" aria-expanded="false"
+                                                        aria-controls="passive-details">
+                                                        Some Passive Thing
+                                                    </div>
+                                                    <div id="passive-details" class="collapse show">
+                                                        <div class="card-body">
+                                                            things
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li id="attack" class="list-group-item">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="hstack mb-2">
+                                            <h6 class="fw-bold">Attack</h6>
+                                            <div class="form-check form-switch ms-2">
+                                                <input class="form-check-input" type="checkbox" role="switch"
+                                                    id="attack-collapse-toggle" checked>
+                                            </div>
+                                            <div class="vr ms-2 me-3"></div>
+                                            <button type="button" class="btn btn-sm btn-outline-primary"><i
+                                                    class="bi bi-plus-lg"></i></button>
+                                        </div>
+                                        <div class="row">
+
+                                            <div class="col-md-auto mb-2">
+                                                <div id="attack-card" class="card">
+                                                    <div id="attack-card-title" class="card-header fw-bold"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#attack-staff" aria-expanded="false"
+                                                        aria-controls="attack-staff">
+                                                        <div class="hstack">
+                                                            <div>
+                                                                Staff
+                                                            </div>
+                                                            <div class="vr ms-2 me-2"></div>
+                                                            <div class="">
+                                                                <h5><code id="acrobatics-total-value">+4</code></h5>
+                                                            </div>
+                                                            <div class="vr ms-2 me-2"></div>
+                                                            <div class="">
+                                                                1d4 B
+                                                            </div>
+                                                            <button type="button"
+                                                                class="btn btn-sm btn-outline-secondary ms-auto"><i
+                                                                    class="bi bi-pencil-square"></i></button>
+                                                        </div>
+                                                    </div>
+                                                    <div id="attack-staff" class="collapse show">
+                                                        <div class="card-body">
+
+                                                            <div class="hstack">
+                                                                <div>
+                                                                    <h5 class="text-success">+4<small
+                                                                            class="text-secondary"> to hit</small></h5>
+                                                                    <hr class="mb-0 mt-0" />
+                                                                    <h6 class="text-success">1d4 B<small
+                                                                            class="text-secondary">ludgeoning
+                                                                            damage</small></h6>
+                                                                </div>
+                                                                <div class="vr ms-2 me-2"></div>
+                                                                <div class="align-self-start">
+                                                                    <label for="basic-url"
+                                                                        class="form-label mb-0">Hands</label>
+                                                                    <div class="input-group">
+                                                                        <div class="btn-group btn-group-sm" role="group"
+                                                                            aria-label="Basic radio toggle button group">
+                                                                            <input type="radio" class="btn-check"
+                                                                                name="btnradio"
+                                                                                id="attack-staff-hands-1"
+                                                                                autocomplete="off" checked>
+                                                                            <label class="btn btn-outline-secondary"
+                                                                                for="attack-staff-hands-1"><i
+                                                                                    class="bi bi-1-circle"></i></label>
+
+                                                                            <input type="radio" class="btn-check"
+                                                                                name="btnradio"
+                                                                                id="attack-staff-hands-2"
+                                                                                autocomplete="off">
+                                                                            <label class="btn btn-outline-secondary"
+                                                                                for="attack-staff-hands-2"><i
+                                                                                    class="bi bi-2-circle"></i></label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="vr ms-2 me-2"></div>
+                                                                <div>
+                                                                    <h6>Level <span
+                                                                            class="fw-bold text-primary">1</span></h6>
+                                                                </div>
+                                                            </div>
+                                                            <hr />
+                                                            <div class="hstack">
+                                                                <table
+                                                                    class="table table-sm table-bordered table-striped table-hover">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>Price</td>
+                                                                            <td class="text-center">0</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Bulk</td>
+                                                                            <td class="text-center">1</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Type</td>
+                                                                            <td class="text-center">Melee</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Category</td>
+                                                                            <td class="text-center">Simple</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Group</td>
+                                                                            <td class="text-center">Club</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li id="actions" class="list-group-item">
+
+                                Actions
+                                <table class="table table-sm table-hover table-striped table-bordered"
+                                    style="max-width: 300px">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Icon</th>
+                                            <th scope="col">Meaning</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-center d-grid">
+                                                <button type="button" class="btn btn-sm btn-info"><i
+                                                        class="bi bi-caret-right-fill"></i></button>
+                                            </td>
+                                            <td>One Action</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center d-grid">
+                                                <button type="button" class="btn btn-sm btn-info"><i
+                                                        class="bi bi-caret-right-fill me-0"></i><i
+                                                        class="bi bi-caret-right-fill ms-0"></i></button>
+                                            </td>
+                                            <td>Two Actions</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center d-grid">
+                                                <button type="button" class="btn btn-sm btn-info"><i
+                                                        class="bi bi-caret-right-fill"></i><i
+                                                        class="bi bi-caret-right-fill"></i><i
+                                                        class="bi bi-caret-right-fill"></i></button>
+                                            </td>
+                                            <td>Three Actions</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center d-grid">
+                                                <button type="button" class="btn btn-sm btn-primary"><i
+                                                        class="bi bi-infinity"></i></button>
+                                            </td>
+                                            <td>Free Actions</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center d-grid">
+                                                <button type="button" class="btn btn-sm btn-success"><i
+                                                        class="bi bi-reply-fill"></i></button>
+                                            </td>
+                                            <td>Reaction</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center d-grid">
+                                                <button type="button" class="btn btn-sm btn-warning"><i
+                                                        class="bi bi-box-arrow-in-down"></i></button>
+                                            </td>
+                                            <td>Concentrate</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center d-grid">
+                                                <button type="button"
+                                                    class="btn btn-sm btn-secondary"><sup>Tr.</sup></button>
+                                            </td>
+                                            <td>Trained Only</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center d-grid">
+                                                <button type="button" class="btn btn-sm btn-dark"><i
+                                                        class="bi bi-incognito"></i>
+                                            </td>
+                                            <td>Secret Check</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <h6 class="fw-bold">Basic Actions (Common)</h6>
+                                <table class="table table-sm table-hover table-striped table-bordered"
+                                    style="max-width: 750px">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Action</th>
+                                            <th scope="col">Usage</th>
+                                            <th scope="col">Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Stride <small>(Move)</small></td>
+                                            <td class="text-center d-grid">
+                                                <button type="button" class="btn btn-sm btn-info"><i
+                                                        class="bi bi-caret-right-fill"></i></button>
+                                            </td>
+                                            <td>Move up to your Speed.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Strike <small>(Attack)</small></td>
+                                            <td class="text-center d-grid">
+                                                <button type="button" class="btn btn-sm btn-info"><i
+                                                        class="bi bi-caret-right-fill"></i></button>
+                                            </td>
+                                            <td>Attack with a weapon or unarmed attack.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Step <small>(Move)</small></td>
+                                            <td class="text-center d-grid">
+                                                <button type="button" class="btn btn-sm btn-info"><i
+                                                        class="bi bi-caret-right-fill"></i></button>
+                                            </td>
+                                            <td>AKA "Guarded Step." Move 5 feet without triggering reactions.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Raise a Shield</td>
+                                            <td class="text-center d-grid">
+                                                <button type="button" class="btn btn-sm btn-info"><i
+                                                        class="bi bi-caret-right-fill"></i></button>
+                                            </td>
+                                            <td>Put up a shield to get its bonus to AC.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <h6 class="fw-bold">Basic Actions (Uncommon)</h6>
+                                <table class="table table-sm table-hover table-striped table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Action</th>
+                                            <th scope="col">Usage</th>
+                                            <th scope="col">Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Activate an Item</td>
+                                            <td class="text-center d-grid">
+                                                <button type="button" class="btn btn-sm btn-info"><i
+                                                        class="bi bi-caret-right-fill"></i></button>
+                                                <small>or more</small>
+                                            </td>
+                                            <td>Call forth the effect of an item by properly activating it.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Aid</td>
+                                            <td class="text-center d-grid">
+                                                <div class="btn-group btn-group-sm" role="group"
+                                                    aria-label="Basic outlined example">
+                                                    <button type="button" class="btn btn-sm btn-info"><i
+                                                            class="bi bi-caret-right-fill"></i></button>
+                                                    <button type="button" class="btn btn-sm btn-success"><i
+                                                            class="bi bi-reply-fill"></i></button>
+                                                </div>
+                                            </td>
+                                            <td>DC <code>20</code> check to give a <code>+1</code> circumstance bonus to
+                                                assisted skill check or attack roll (crit success: <code>+2</code>,
+                                                <code>+3</code> if master, <code>+4</code> if legendary).
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Delay</td>
+                                            <td class="text-center d-grid">
+                                                <button type="button" class="btn btn-sm btn-primary"><i
+                                                        class="bi bi-infinity"></i></button>
+                                            </td>
+                                            <td>Select this when your turn begins; take your turn later.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Dismiss</td>
+                                            <td class="text-center d-grid">
+                                                <div class="btn-group btn-group-sm" role="group"
+                                                    aria-label="Basic outlined example">
+                                                    <button type="button" class="btn btn-sm btn-warning"><i
+                                                            class="bi bi-box-arrow-in-down"></i></button>
+                                                    <button type="button" class="btn btn-sm btn-info"><i
+                                                            class="bi bi-caret-right-fill"></i></button>
+                                                </div>
+                                            </td>
+                                            <td>End one spell effect or magic item effect.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Interact <small>(Manipulate)</small></td>
+                                            <td class="text-center d-grid">
+                                                <button type="button" class="btn btn-sm btn-info"><i
+                                                        class="bi bi-caret-right-fill"></i></button>
+                                            </td>
+                                            <td>Grab an object, open a door, draw an item, or do a similar action.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Mount <small>(Move)</small></td>
+                                            <td class="text-center d-grid">
+                                                <button type="button" class="btn btn-sm btn-info"><i
+                                                        class="bi bi-caret-right-fill"></i></button>
+                                            </td>
+                                            <td>Get on an allied animal bigger than you to ride it.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ready</td>
+                                            <td class="text-center d-grid">
+                                                <div class="btn-group btn-group-sm" role="group"
+                                                    aria-label="Small button group">
+                                                    <button type="button" class="btn btn-sm btn-warning"><i
+                                                            class="bi bi-box-arrow-in-down"></i></button>
+                                                    <button type="button" class="btn btn-sm btn-info"><i
+                                                            class="bi bi-caret-right-fill me-0"></i><i
+                                                            class="bi bi-caret-right-fill ms-0"></i></button>
+                                                </div>
+                                            </td>
+                                            <td>Prepare to take a <code>single</code>/<code>free</code> action as a
+                                                reaction with a given trigger.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Release <small>(Manipulate)</small></td>
+                                            <td class="text-center d-grid"><button type="button"
+                                                    class="btn btn-sm btn-primary"><i
+                                                        class="bi bi-infinity"></i></button></td>
+                                            <td>Release something you’re holding without triggering reactions.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sustain a Spell/Activation</td>
+                                            <td class="text-center d-grid">
+                                                <div class="btn-group btn-group-sm" role="group"
+                                                    aria-label="Small button group">
+                                                    <button type="button" class="btn btn-sm btn-warning"><i
+                                                            class="bi bi-box-arrow-in-down"></i></button>
+                                                    <button type="button" class="btn btn-sm btn-info"><i
+                                                            class="bi bi-caret-right-fill"></i></button>
+                                                </div>
+                                            </td>
+                                            <td>Extend a spell or item effect until the end of your next turn.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Take Cover</td>
+                                            <td class="text-center d-grid">
+                                                <button type="button" class="btn btn-sm btn-info"><i
+                                                        class="bi bi-caret-right-fill"></i></button>
+                                            </td>
+                                            <td>Gain cover (or get greater cover if you have cover).</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <h6 class="fw-bold">Basic Actions (Situational)</h6>
+                                <table class="table table-sm table-hover table-striped table-bordered"
+                                    style="max-width: 750px">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Action</th>
+                                            <th scope="col">Usage</th>
+                                            <th scope="col">Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Avert Gaze</td>
+                                            <td class="text-center d-grid">
+                                                <button type="button" class="btn btn-sm btn-info"><i
+                                                        class="bi bi-caret-right-fill"></i></button>
+                                            </td>
+                                            <td>Get a +2 circumstance bonus against visual abilities.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Crawl <small>(Move)</small></td>
+                                            <td class="text-center d-grid">
+                                                <button type="button" class="btn btn-sm btn-info"><i
+                                                        class="bi bi-caret-right-fill"></i></button>
+                                            </td>
+                                            <td>Move 5 feet while prone.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Drop Prone <small>(Move)</small></td>
+                                            <td class="text-center d-grid">
+                                                <button type="button" class="btn btn-sm btn-info"><i
+                                                        class="bi bi-caret-right-fill"></i></button>
+                                            </td>
+                                            <td>Fall prone (laying down).</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Grab an Edge</td>
+                                            <td class="text-center d-grid">
+                                                <button type="button" class="btn btn-sm btn-success"><i
+                                                        class="bi bi-reply-fill"></i></button>
+                                            </td>
+                                            <td>Try to catch something to stop a fall.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Leap</td>
+                                            <td class="text-center d-grid">
+                                                <button type="button" class="btn btn-sm btn-info"><i
+                                                        class="bi bi-caret-right-fill"></i></button>
+                                            </td>
+                                            <td>Jump horizontally 10 feet (15 feet if your Speed is 30 feet or more), or
+                                                vertically 3 feet and horizontally 5 feet.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Point Out</td>
+                                            <td class="text-center d-grid">
+                                                <button type="button" class="btn btn-sm btn-info"><i
+                                                        class="bi bi-caret-right-fill"></i></button>
+                                            </td>
+                                            <td>Reveal unobserved creature.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Seek</td>
+                                            <td class="text-center d-grid">
+                                                <div class="btn-group btn-group-sm" role="group"
+                                                    aria-label="Small button group">
+                                                    <button type="button" class="btn btn-sm btn-warning"><i
+                                                            class="bi bi-box-arrow-in-down"></i></button>
+                                                    <button type="button" class="btn btn-sm btn-dark"><i
+                                                            class="bi bi-incognito"></i>
+                                                        <button type="button" class="btn btn-sm btn-info"><i
+                                                                class="bi bi-caret-right-fill"></i></button>
+                                                </div>
+                                            </td>
+                                            <td>Scan an area for signs of creatures/objects using Perception.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sense Motive</td>
+                                            <td class="text-center d-grid">
+                                                <div class="btn-group btn-group-sm" role="group"
+                                                    aria-label="Small button group">
+                                                    <button type="button" class="btn btn-sm btn-warning"><i
+                                                            class="bi bi-box-arrow-in-down"></i></button>
+                                                    <button type="button" class="btn btn-sm btn-dark"><i
+                                                            class="bi bi-incognito"></i>
+                                                        <button type="button" class="btn btn-sm btn-info"><i
+                                                                class="bi bi-caret-right-fill"></i></button>
+                                                </div>
+                                            </td>
+                                            <td>See if a creature is lying.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Stand <small>(Move)</small></td>
+                                            <td class="text-center d-grid">
+                                                <button type="button" class="btn btn-sm btn-info"><i
+                                                        class="bi bi-caret-right-fill"></i></button>
+                                            </td>
+                                            <td>You stand up from prone.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
                         </ul>
                     </div>
                     <!-- Battle // END -->
@@ -2810,6 +3512,18 @@
     </div>
     <!-- Character Info // END -->
 
+    <!-- Action Tracker // START -->
+    <div class="offcanvas offcanvas-bottom" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="action-tracker-panel" aria-labelledby="action-tracker-panel-label">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="action-tracker-panel-label">Offcanvas bottom</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body small">
+            ...
+        </div>
+    </div>
+    <!-- Action Tracker // END -->
+
     <!-- Settings // START -->
     <div class="offcanvas offcanvas-start" tabindex="-1" id="page-settings-panel"
         aria-labelledby="page-settings-panel-label">
@@ -2867,10 +3581,24 @@
                         </label>
                     </div>
                 </li>
-                <li class="list-group-item d-grid">
+                <li class="list-group-item d-grid mb-3">
                     <h6 class="fw-bold">Toggle Light/Dark Mode</h6>
                     <button id="color-toggle-button" type="button" class="btn btn-light"><i id="color-toggle-icon"
                             class="bi bi-lightbulb-fill"></i></button>
+                </li>
+                <li class="list-group-item d-grid mb-3">
+                    <h6 class="fw-bold">Import / Export JSON</h6>
+                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                        <button type="button" class="btn btn-outline-secondary"><i
+                                class="bi bi-download"></i>&nbsp;Import</button>
+                        <button type="button" class="btn btn-outline-secondary"><i
+                                class="bi bi-upload"></i>&nbsp;Export</button>
+                    </div>
+                </li>
+                <li class="list-group-item d-grid mb-3">
+                    <h6 class="fw-bold text-danger">Reset All</h6>
+                    <button id="color-toggle-button" type="button" class="btn btn-danger"><i id="reset-all"
+                            class="bi bi-arrow-clockwise"></i></button>
                 </li>
             </ul>
         </div>

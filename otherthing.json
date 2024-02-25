@@ -1,0 +1,78 @@
+{
+    "originalEvent": {
+        "isTrusted": true
+    },
+    "type": "click",
+    "target": {
+        "jQuery371030326273234230731": {
+            "events": {
+                "click": [
+                    {
+                        "type": "click",
+                        "origType": "click",
+                        "guid": 15,
+                        "namespace": false
+                    },
+                    {
+                        "type": "click",
+                        "origType": "click",
+                        "guid": 14,
+                        "namespace": ""
+                    }
+                ]
+            },
+            "click": false
+        }
+    },
+    "currentTarget": {
+        "jQuery371030326273234230731": {
+            "events": {
+                "click": [
+                    {
+                        "type": "click",
+                        "origType": "click",
+                        "guid": 15,
+                        "namespace": false
+                    },
+                    {
+                        "type": "click",
+                        "origType": "click",
+                        "guid": 14,
+                        "namespace": ""
+                    }
+                ]
+            },
+            "click": false
+        }
+    },
+    "relatedTarget": null,
+    "timeStamp": 1555,
+    "jQuery37103032627323423073": true,
+    "delegateTarget": {
+        "jQuery371030326273234230731": {
+            "events": {
+                "click": [
+                    {
+                        "type": "click",
+                        "origType": "click",
+                        "guid": 15,
+                        "namespace": false
+                    },
+                    {
+                        "type": "click",
+                        "origType": "click",
+                        "guid": 14,
+                        "namespace": ""
+                    }
+                ]
+            },
+            "click": false
+        }
+    },
+    "handleObj": {
+        "type": "click",
+        "origType": "click",
+        "guid": 14,
+        "namespace": ""
+    }
+}
